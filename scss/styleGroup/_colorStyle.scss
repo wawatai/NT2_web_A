@@ -11,6 +11,7 @@ $backgroundColor_10: #fff9f8;
 $backgroundColor_11: #cfb53d;
 $backgroundColor_12: #cccccc;
 $backgroundColor_13: #cca172;
+$backgroundColor_14: #0000009d;
 
 $fontColor_1: #ffffff;
 $fontColor_2: #000000;
@@ -22,10 +23,13 @@ $fontColor_7: #999999;
 $fontColor_8: #f15a24;
 $fontColor_9: #cfa678;
 $fontColor_10: #4d4d4d;
-$fontColor_11: #9c7d59;
+$fontColor_11: #2e2b4d;
 $fontColor_12: #ff8d68;
 $fontColor_13: #00a99d;
 $fontColor_14: #55aaff;
+$fontColor_15: #d31a1a;
+$fontColor_16: #6c6c6c;
+$fontColor_17: #2c2c2c;
 
 $borderColor_1: #ffffff4d;
 $borderColor_2: #e6e6e6;
@@ -36,6 +40,7 @@ $borderColor_6: #ffff00;
 $borderColor_7: #b3b3b3;
 $borderColor_8: #e11515;
 $borderColor_9: #cca172;
+$borderColor_10: #cfcfcf;
 
 $boxShadow_1: #8a000080;
 $boxShadow_2: #c0c0c0;
@@ -45,6 +50,7 @@ $linear_1: linear-gradient(to bottom,#ffffff 40%,#f2f2f2 100%);
 $linear_2: linear-gradient(to bottom,#ffffff 0%,#e6e6e6 100%);
 $linear_3: linear-gradient(120deg,#e8ebf2 0%,#cbcdd3 30%);
 $linear_4: linear-gradient(120deg,#f1d7b7 0%,#cca172 50%,#f1c999 100%);
+$linear_5: linear-gradient(to bottom,#e11515 0%,#900707 100%);
 
 
 ///////button
@@ -59,10 +65,6 @@ $linear_4: linear-gradient(120deg,#f1d7b7 0%,#cca172 50%,#f1c999 100%);
     font-size: 14px;
     font-weight: bold;
     padding: 0 16px;
-
-    &:hover,&:active,&.active {
-
-    }
 }
 //footer右二按鈕
 @mixin buttonStyle_2 {
@@ -185,10 +187,6 @@ $linear_4: linear-gradient(120deg,#f1d7b7 0%,#cca172 50%,#f1c999 100%);
     border: solid 1px #e11515;
     border-radius: 3px;
     color: #e11515;
-
-    &:hover,&:active,&.active {
-        
-    }
 }
 //頁籤式按鈕
 @mixin buttonStyle_9 {
@@ -310,10 +308,6 @@ $linear_4: linear-gradient(120deg,#f1d7b7 0%,#cca172 50%,#f1c999 100%);
     background: #ffffff;
     color: #fc4d14;
     border: solid 1px #fc4d14;
-
-    &:hover,&:active,&.active {
-
-    }
 }
 @mixin buttonStyle_13_2 {
     font-size: 13px;
@@ -322,10 +316,6 @@ $linear_4: linear-gradient(120deg,#f1d7b7 0%,#cca172 50%,#f1c999 100%);
     background: #ffffff;
     color: #557bff;
     border: solid 1px #557bff;
-
-    &:hover,&:active,&.active {
-        
-    }
 }
 
 button:disabled {

@@ -1,4 +1,12 @@
-//header 未登入input_ic
+//header
+header .gameNav {
+    background: url('../images/headerBottom.png') no-repeat;
+    background-size: cover;
+}
+header .topGameList {
+    background: url('../images/headerList.png') no-repeat;
+    background-size: cover;  
+}
 header .acc_ic {
     background: url('../images/icon/svg/id.svg') no-repeat;
     background-size: 100%;
@@ -11,21 +19,35 @@ header .forget {
     background: url('../images/icon/svg/question.svg') no-repeat;
     background-size: 100%;
 }
-
-//註冊
 header .register_ic {
     background: url('../images/icon/svg/register.svg') no-repeat;
     background-size: 100%;
 }
-
-//跑馬燈
 header .marquee_ic {
     background: url('../images/icon/svg/marquee.svg') no-repeat;
     background-size: 100%;
 }
+header .member_ic {
+    background: url('../images/icon/svg/member.svg') no-repeat;
+    background-size: 100%;
+}
+header .mail_ic {
+    background: url('../images/icon/svg/letter.svg') no-repeat;
+    background-size: 100%;
+}
+header .logout_ic {
+    background: url('../images/icon/svg/signout.svg') no-repeat;
+    background-size: 100%;
+}
+
+//mainWrap
 .mainWrap .marquee_ic {
     background: url('../images/icon/svg/marquee.svg') no-repeat;
     background-size: 100%;
+}
+.mainWrap .downBox i {
+    background: url('../images/icon/downBox.png') no-repeat;
+    background-size: 500%;
 }
 
 //下拉選單 topGameList arrow
@@ -63,21 +85,25 @@ header .marquee_ic {
 }
 
 //首頁下方教學列 .downBar icon
-.downBar .depositTeach {
+.downBar i {
+    background: url('../images/icon/barBtn.png') no-repeat;
+    background-size: 500%;
+}
+.downBar.inner .depositTeach {
     background: url('../images/icon/svg/deposit_t.svg') no-repeat;
-    background-size: 100%;
+    background-size: contain;
 }
-.downBar .withdrawalTeach {
+.downBar.inner .withdrawalTeach {
     background: url('../images/icon/svg/withdrawal_t.svg') no-repeat;
-    background-size: 100%;
+    background-size: contain;
 }
-.downBar .walletTeach {
+.downBar.inner .walletTeach {
     background: url('../images/icon/svg/wallet_t.svg') no-repeat;
-    background-size: 100%;
+    background-size: contain;
 }
-.downBar .vip {
+.downBar.inner .vip {
     background: url('../images/icon/svg/vip.svg') no-repeat;
-    background-size: 100%;
+    background-size: contain;
 }
 
 //footer .top arrow
@@ -159,29 +185,9 @@ footer .top button::before {
     background-size: 100%;
 }
 
-//footer .footerList button i
-.footerList button i {
-    background: url('../images/icon/svg/notice.svg') no-repeat;
-    background-size: 100%;
-}
-
 //header 登入後下選單旋轉圖
 .transferInfo .money i {
     background: url('../images/icon/svg/loading_g.svg') no-repeat;
-    background-size: 100%;
-}
-
-//hedader登入後按鈕icon
-header .member_ic {
-    background: url('../images/icon/svg/member.svg') no-repeat;
-    background-size: 100%;
-}
-header .mail_ic {
-    background: url('../images/icon/svg/letter.svg') no-repeat;
-    background-size: 100%;
-}
-header .logout_ic {
-    background: url('../images/icon/svg/signout.svg') no-repeat;
     background-size: 100%;
 }
 
@@ -196,16 +202,8 @@ header .logout_ic {
 }
 
 //gameWrap background
-.sportPage {
-    background: url('../images/sport_background.png') no-repeat top center;
-    background-size: cover;
-}
-.livePage {
-    background: url('../images/live_background.png') no-repeat top center;
-    background-size: cover;
-}
-.lotteryPage {
-    background: url('../images/lotto_background.png') no-repeat top center;
+.gameWrap .content {
+    background: url('../images/innerBG.png') no-repeat;
     background-size: cover;
 }
 
@@ -530,9 +528,8 @@ header .topGameList div {
 }
 
 //入口頁中央遊戲enter .mainWrap .img
-.mainWrap .typeList .img {
-    width: 452px;
-    height: 317px;
+.mainWrap .typeList img {
+    width: 100%;
 }
 .mainWrap .typeList .sport .img {
     background: url('../images/enter/sport.png') no-repeat;
@@ -559,12 +556,12 @@ header .topGameList div {
     background-size: 100%;
 }
 
-//gameWrap .mainImg左圖
+//gameWrap
 .gameWrap .mainImg {
     width: 675px;
     height: 732px;
+    flex-shrink: 0;
 }
-//sport右小圖
 .gameWrap .btnBox .innBox li {
     width: 189px;
     height: 185px;

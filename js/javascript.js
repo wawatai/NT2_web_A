@@ -102,106 +102,6 @@ $(function(){
     }
 })
 
-//slot+fish+board下拉選單寬度+點擊滑動
-// $(function(){
-//     var slot = document.querySelectorAll('.listWrap .slot li');
-//     var slotl = slot.length;
-//     var slwp = document.getElementsByClassName('slot');
-//     slwp[0].style.width = 220 * slotl + 'px'; 
-
-//     var n = 0;
-//     var nt = $('.listWrap .next');
-//     var pv = $('.listWrap .prev');
-//     $(nt).click(function(){
-//         n ++;
-//         slwp[0].style.transform = "translateX(" + (-220 * n) + "px)";
-
-//         if(n == 1){
-//             n --;
-//         }
-//     })
-//     $(pv).click(function(){
-//         n --;
-//         slwp[0].style.transform = "translateX(" + (-220 * n) + "px)";
-
-//         if(n == -1){
-//             slwp[0].style.transform = "translateX(" + (0) + "px)";
-//             n ++;
-//         }
-//     })
-// })
-// $(function(){
-//     var fish = document.querySelectorAll('.listWrap .fish li');
-//     var fishl = fish.length;
-//     var fhwp = document.getElementsByClassName('fish');
-//     fhwp[0].style.width = 220 * fishl + 'px'; 
-
-//     var n = 0;
-//     var nt = $('.listWrap .next');
-//     var pv = $('.listWrap .prev');
-//     $(nt).click(function(){
-//         n ++;
-//         fhwp[0].style.transform = "translateX(" + (-220 * n) + "px)";
-
-//         if(n == 1){
-//             n --;
-//         }
-//     })
-//     $(pv).click(function(){
-//         n --;
-//         fhwp[0].style.transform = "translateX(" + (-220 * n) + "px)";
-
-//         if(n == -1){
-//             fhwp[0].style.transform = "translateX(" + (0) + "px)";
-//             n ++;
-//         }
-//     })
-// })
-// $(function(){
-//     var board = document.querySelectorAll('.listWrap .board li');
-//     var boardl = board.length;
-//     var bdwp = document.getElementsByClassName('board');
-//     bdwp[0].style.width = 220 * boardl + 'px'; 
-
-//     var n = 0;
-//     var nt = $('.listWrap .next');
-//     var pv = $('.listWrap .prev');
-//     $(nt).click(function(){
-//         n ++;
-//         bdwp[0].style.transform = "translateX(" + (-220 * n) + "px)";
-
-//         if(n == 14){
-//             n --;
-//         }
-//     })
-//     $(pv).click(function(){
-//         n --;
-//         bdwp[0].style.transform = "translateX(" + (-220 * n) + "px)";
-
-//         if(n == -1){
-//             bdwp[0].style.transform = "translateX(" + (0) + "px)";
-//             n ++;
-//         }
-//     })
-// })
-
-//遊戲頁hover時左圖切換
-$(function(){
-    $(".gameWrap .livePage .innBox li").hover(function(){
-        var n = $(this).index();
-
-        $(".gameWrap .mainImg")
-        .attr("src","../images/platform/live/live_"+ (n + 1) +".png");
-    })
-
-    $(".gameWrap .lotteryPage .innBox li").hover(function(){
-        var n = $(this).index();
-
-        $(".gameWrap .mainImg")
-        .attr("src","../images/platform/lottery/lottery_"+ (n + 1) +".png");
-    })
-})
-
 //.vipWrap .detailCardBox內選單滑動
 $(function(){
     var vipCard = document.querySelector('.detailCardBox ul');
@@ -605,6 +505,7 @@ $(function(){
     })
 })
 
+//goTop
 $(function(){
     $('.goTop').click(function(){
         var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body'); //各瀏覽器相容性
@@ -616,25 +517,41 @@ $(function(){
 
 function openSportGame(){
     $('.jumpWindow').removeClass('display');
-    $('.filter,.betWindow.sportGame01').addClass('display');
+    $('.filter,.betWindow.sportGame').addClass('display');
 }
 function openLiveGame(){
     $('.jumpWindow').removeClass('display');
-    $('.filter,.betWindow.liveGame01').addClass('display');
+    $('.filter,.betWindow.liveGame').addClass('display');
 }
 function openSlotGame(){
     $('.jumpWindow').removeClass('display');
-    $('.filter,.betWindow.slotGame01').addClass('display');
+    $('.filter,.betWindow.slotGame').addClass('display');
 }
 function openLotteryGame(){
     $('.jumpWindow').removeClass('display');
-    $('.filter,.betWindow.lotteryGame01').addClass('display');
+    $('.filter,.betWindow.lotteryGame').addClass('display');
 }
 function openFishGame(){
     $('.jumpWindow').removeClass('display');
-    $('.filter,.betWindow.fishGame01').addClass('display');
+    $('.filter,.betWindow.fishGame').addClass('display');
 }
 function openBoardGame(){
     $('.jumpWindow').removeClass('display');
-    $('.filter,.betWindow.boardGame01').addClass('display');
+    $('.filter,.betWindow.boardGame').addClass('display');
 }
+
+//gameWrap滑入左圖切換
+$(function(){
+    $(".gameWrap .innBox li").hover(function(){
+        var n = $(this).index();
+
+        $(".sportPage .mainImg")
+        .attr("src","../images/platform/sport/sportImg_"+ (n + 1) +".png");
+
+        $(".livePage .mainImg")
+        .attr("src","../images/platform/live/liveImg_"+ (n + 1) +".png");
+
+        $(".sportPage .mainImg")
+        .attr("src","../images/platform/sport/sportImg_"+ (n + 1) +".png");
+    })
+})

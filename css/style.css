@@ -34,6 +34,16 @@ input:read-only {
   pointer-events: none !important;
 }
 
+header .gameNav {
+  background: url("../images/headerBottom.png") no-repeat;
+  background-size: cover;
+}
+
+header .topGameList {
+  background: url("../images/headerList.png") no-repeat;
+  background-size: cover;
+}
+
 header .acc_ic {
   background: url("../images/icon/svg/id.svg") no-repeat;
   background-size: 100%;
@@ -59,9 +69,29 @@ header .marquee_ic {
   background-size: 100%;
 }
 
+header .member_ic {
+  background: url("../images/icon/svg/member.svg") no-repeat;
+  background-size: 100%;
+}
+
+header .mail_ic {
+  background: url("../images/icon/svg/letter.svg") no-repeat;
+  background-size: 100%;
+}
+
+header .logout_ic {
+  background: url("../images/icon/svg/signout.svg") no-repeat;
+  background-size: 100%;
+}
+
 .mainWrap .marquee_ic {
   background: url("../images/icon/svg/marquee.svg") no-repeat;
   background-size: 100%;
+}
+
+.mainWrap .downBox i {
+  background: url("../images/icon/downBox.png") no-repeat;
+  background-size: 500%;
 }
 
 .topGameList .prev, .topGameList .next {
@@ -99,24 +129,29 @@ header .marquee_ic {
   background-size: 100%;
 }
 
-.downBar .depositTeach {
+.downBar i {
+  background: url("../images/icon/barBtn.png") no-repeat;
+  background-size: 500%;
+}
+
+.downBar.inner .depositTeach {
   background: url("../images/icon/svg/deposit_t.svg") no-repeat;
-  background-size: 100%;
+  background-size: contain;
 }
 
-.downBar .withdrawalTeach {
+.downBar.inner .withdrawalTeach {
   background: url("../images/icon/svg/withdrawal_t.svg") no-repeat;
-  background-size: 100%;
+  background-size: contain;
 }
 
-.downBar .walletTeach {
+.downBar.inner .walletTeach {
   background: url("../images/icon/svg/wallet_t.svg") no-repeat;
-  background-size: 100%;
+  background-size: contain;
 }
 
-.downBar .vip {
+.downBar.inner .vip {
   background: url("../images/icon/svg/vip.svg") no-repeat;
-  background-size: 100%;
+  background-size: contain;
 }
 
 footer .top button::before {
@@ -214,28 +249,8 @@ footer .top button::before {
   background-size: 100%;
 }
 
-.footerList button i {
-  background: url("../images/icon/svg/notice.svg") no-repeat;
-  background-size: 100%;
-}
-
 .transferInfo .money i {
   background: url("../images/icon/svg/loading_g.svg") no-repeat;
-  background-size: 100%;
-}
-
-header .member_ic {
-  background: url("../images/icon/svg/member.svg") no-repeat;
-  background-size: 100%;
-}
-
-header .mail_ic {
-  background: url("../images/icon/svg/letter.svg") no-repeat;
-  background-size: 100%;
-}
-
-header .logout_ic {
-  background: url("../images/icon/svg/signout.svg") no-repeat;
   background-size: 100%;
 }
 
@@ -249,18 +264,8 @@ header .logout_ic {
   background-size: 100%;
 }
 
-.sportPage {
-  background: url("../images/sport_background.png") no-repeat top center;
-  background-size: cover;
-}
-
-.livePage {
-  background: url("../images/live_background.png") no-repeat top center;
-  background-size: cover;
-}
-
-.lotteryPage {
-  background: url("../images/lotto_background.png") no-repeat top center;
+.gameWrap .content {
+  background: url("../images/innerBG.png") no-repeat;
   background-size: cover;
 }
 
@@ -589,9 +594,8 @@ header .topGameList div img {
      object-fit: cover;
 }
 
-.mainWrap .typeList .img {
-  width: 452px;
-  height: 317px;
+.mainWrap .typeList img {
+  width: 100%;
 }
 
 .mainWrap .typeList .sport .img {
@@ -627,6 +631,8 @@ header .topGameList div img {
 .gameWrap .mainImg {
   width: 675px;
   height: 732px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .gameWrap .btnBox .innBox li {
@@ -787,7 +793,7 @@ html body {
 }
 html body header {
   width: 100%;
-  height: 125px;
+  height: 128px;
   background: #333333;
   position: relative;
 }
@@ -1078,8 +1084,7 @@ html body header .top .user li:not(.platform).service a {
 }
 html body header .gameNav {
   width: 100%;
-  height: 80px;
-  background: #e11515;
+  height: 83px;
 }
 html body header .gameNav .center {
   width: 1400px;
@@ -1195,19 +1200,17 @@ html body header .topGameList {
   overflow: hidden;
   position: absolute;
   left: 0px;
-  bottom: -226px;
-  z-index: 1;
+  bottom: -336px;
+  z-index: 10;
 }
 html body header .topGameList.display {
   height: auto;
 }
 html body header .topGameList .listWrap {
   width: 100%;
-  height: 226px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-top: solid 1px #e6e6e6;
-  background: #ffffff;
+  height: 336px;
+  -webkit-box-shadow: inset 0 10px 30px 0 #00000033;
+          box-shadow: inset 0 10px 30px 0 #00000033;
 }
 html body header .topGameList .listWrap .center {
   width: 1400px;
@@ -1388,7 +1391,6 @@ html body .sideBar .rightSide li i {
 html body .mainWrap {
   width: 100%;
   height: auto;
-  padding-bottom: 50px;
   background: #f4f4f4;
 }
 html body .mainWrap .marqueeArea {
@@ -1450,56 +1452,10 @@ html body .mainWrap .marqueeArea .center .marqueeWrap .marquee p {
             transform: translate(-100%);
   }
 }
-html body .mainWrap .center {
+html body .mainWrap .downBar {
   width: 1400px;
-  height: auto;
-  margin: 0 auto;
-}
-html body .mainWrap .center .typeList {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-bottom: 28px;
-}
-html body .mainWrap .center .typeList li {
-  width: auto;
-  height: auto;
-  margin: 0 22px 36px 0;
-  position: relative;
-  cursor: pointer;
-}
-html body .mainWrap .center .typeList li:nth-of-type(3n) {
-  margin-right: 0px;
-}
-html body .mainWrap .center .typeList li .wordBox {
-  position: absolute;
-  top: 53%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  right: 0px;
-  width: 46%;
-}
-html body .mainWrap .center .typeList li .wordBox p {
-  text-align: center;
-  padding-top: 8px;
-  font-weight: bold;
-}
-html body .mainWrap .center .typeList li .wordBox p.game {
-  font-size: 42px;
-  color: #272727;
-}
-html body .mainWrap .center .typeList li .wordBox p.type {
-  font-size: 23px;
-  color: #e11515;
-}
-html body .mainWrap .center .downBar {
-  width: 100%;
-  height: 120px;
-  border-radius: 10px;
+  height: 200px;
+  border-radius: 35px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #ffffff), to(#f2f2f2));
   background: linear-gradient(to bottom, #ffffff 40%, #f2f2f2 100%);
   -webkit-box-shadow: 0px 5px 10px 0px #c0c0c0;
@@ -1507,8 +1463,9 @@ html body .mainWrap .center .downBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 auto;
 }
-html body .mainWrap .center .downBar li {
+html body .mainWrap .downBar li {
   width: 25%;
   height: 100%;
   display: -webkit-box;
@@ -1526,16 +1483,151 @@ html body .mainWrap .center .downBar li {
           justify-content: center;
   font-weight: bold;
   color: #000000;
-  border-right: solid 1px #e6e6e6;
   cursor: pointer;
+  position: relative;
 }
-html body .mainWrap .center .downBar li:last-child {
-  border: none;
+html body .mainWrap .downBar li:hover i, html body .mainWrap .downBar li:active i, html body .mainWrap .downBar li.active i {
+  background-position-y: 100%;
 }
-html body .mainWrap .center .downBar li i {
-  width: 46px;
-  height: 46px;
-  margin-bottom: 14px;
+html body .mainWrap .downBar li::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 140px;
+  top: 50%;
+  right: -1px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #cfcfcf;
+}
+html body .mainWrap .downBar li:last-child::before {
+  display: none;
+}
+html body .mainWrap .downBar li i {
+  width: 150px;
+  height: 150px;
+}
+html body .mainWrap .downBar li i.depositTeach {
+  background-position-x: 0;
+}
+html body .mainWrap .downBar li i.withdrawalTeach {
+  background-position-x: 25%;
+}
+html body .mainWrap .downBar li i.walletTeach {
+  background-position-x: 50%;
+}
+html body .mainWrap .downBar li i.vip {
+  background-position-x: 75%;
+}
+html body .mainWrap .center {
+  width: 1400px;
+  height: auto;
+  margin: 40px auto 0;
+}
+html body .mainWrap .center .typeList {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 0 1fr 0 1fr 0 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 36px 0;
+}
+html body .mainWrap .center .typeList li {
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  position: relative;
+}
+html body .mainWrap .center .typeList li:hover::before, html body .mainWrap .center .typeList li:active::before, html body .mainWrap .center .typeList li.active::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 21px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 40%;
+  height: 2px;
+  background: #ffffff;
+}
+html body .mainWrap .center .typeList li.sportLive:hover::before, html body .mainWrap .center .typeList li.sportLive:active::before, html body .mainWrap .center .typeList li.sportLive.active::before, html body .mainWrap .center .typeList li.av:hover::before, html body .mainWrap .center .typeList li.av:active::before, html body .mainWrap .center .typeList li.av.active::before {
+  bottom: 20px;
+}
+html body .mainWrap .downBox {
+  width: 100%;
+  height: 240px;
+  margin-top: 86px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #ffffff;
+  -webkit-box-shadow: 0 -10px 15px #00000033;
+          box-shadow: 0 -10px 15px #00000033;
+}
+html body .mainWrap .downBox ul {
+  width: 1400px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .mainWrap .downBox ul li {
+  width: 25%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+html body .mainWrap .downBox ul li:nth-of-type(2) .textBox {
+  left: 145px;
+}
+html body .mainWrap .downBox ul li:nth-of-type(3) .textBox {
+  left: 155px;
+}
+html body .mainWrap .downBox ul li i {
+  display: block;
+  width: 170px;
+  height: 170px;
+}
+html body .mainWrap .downBox ul li i.trust_ic {
+  background-position-x: 0;
+}
+html body .mainWrap .downBox ul li i.promise_ic {
+  background-position-x: 25%;
+}
+html body .mainWrap .downBox ul li i.product_ic {
+  background-position-x: 50%;
+}
+html body .mainWrap .downBox ul li i.service_ic {
+  background-position-x: 75%;
+}
+html body .mainWrap .downBox ul li .textBox {
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 135px;
+  margin-top: 15px;
+}
+html body .mainWrap .downBox ul li .textBox .title {
+  color: #d31a1a;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+html body .mainWrap .downBox ul li .textBox p:not(.title) {
+  color: #000000;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 html body footer {
   width: 100%;
@@ -2289,7 +2381,7 @@ html body .filter .jumpWindow .title i {
   cursor: pointer;
 }
 html body .gameWrap {
-  padding-bottom: 66px;
+  padding: 35px 0 66px;
   background: #f4f4f4;
 }
 html body .gameWrap .content {
@@ -2310,81 +2402,116 @@ html body .gameWrap .content .center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 70px 0 0 100px;
+  padding: 70px 0 70px 90px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-html body .gameWrap .content .textBox {
-  width: 684px;
+html body .gameWrap .content .center .textBox {
+  width: 100%;
   height: auto;
+  padding-top: 80px;
 }
-html body .gameWrap .content .textBox .title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+html body .gameWrap .content .center .textBox .title {
   font-weight: bold;
 }
-html body .gameWrap .content .textBox .title .big {
+html body .gameWrap .content .center .textBox .title .big {
+  width: 100%;
   font-size: 58px;
-  letter-spacing: 17px;
-  color: #9c7d59;
+  color: #2e2b4d;
 }
-html body .gameWrap .content .textBox .title .small {
+html body .gameWrap .content .center .textBox .title .small {
+  width: 100%;
   font-size: 40px;
-  padding-bottom: 5px;
-  color: #9c7d59;
+  text-align: end;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 60px 0 0;
+  letter-spacing: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e11515), to(#900707));
+  background: linear-gradient(to bottom, #e11515 0%, #900707 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
 }
-html body .gameWrap .content .textBox .mainCnt {
-  margin: 50px 0;
-  width: 630px;
+html body .gameWrap .content .center .textBox .mainCnt {
+  width: 100%;
   letter-spacing: 1px;
   line-height: 24px;
   font-size: 14px;
   font-weight: bold;
   color: #4d4d4d;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 50px 60px 50px 0;
 }
-html body .gameWrap .content .btnBox {
-  width: auto;
-  height: auto;
-}
-html body .gameWrap .content .btnBox .innBox {
-  width: 660px;
-  height: auto;
-}
-html body .gameWrap .content .btnBox .innBox ul {
+html body .gameWrap .content .center .btnBox {
   width: 100%;
   height: auto;
+}
+html body .gameWrap .content .center .btnBox .innBox {
+  width: 100%;
+  height: auto;
+}
+html body .gameWrap .content .center .btnBox .innBox ul {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 189px 15px 189px 15px 189px;
+  grid-template-columns: repeat(3, 189px);
+  grid-auto-rows: 185px;
+  grid-gap: 30px 15px;
+}
+html body .gameWrap .content .center .btnBox .innBox ul li {
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  position: relative;
+}
+html body .gameWrap .content .center .btnBox .innBox ul li.disable {
+  cursor: not-allowed;
+}
+html body .gameWrap .content .center .btnBox .innBox ul li.disable:hover img, html body .gameWrap .content .center .btnBox .innBox ul li.disable.active img, html body .gameWrap .content .center .btnBox .innBox ul li.disable.active img {
+  -o-object-position: top;
+     object-position: top;
+}
+html body .gameWrap .content .center .btnBox .innBox ul li.disable .fixBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
-html body .gameWrap .content .btnBox .innBox ul li {
-  cursor: pointer;
-  margin: 0 15px 35px 0;
-}
-html body .gameWrap .content .btnBox .innBox ul li:hover img, html body .gameWrap .content .btnBox .innBox ul li.active img, html body .gameWrap .content .btnBox .innBox ul li.active img {
+html body .gameWrap .content .center .btnBox .innBox ul li:hover img, html body .gameWrap .content .center .btnBox .innBox ul li.active img, html body .gameWrap .content .center .btnBox .innBox ul li.active img {
   -o-object-position: bottom;
      object-position: bottom;
 }
-html body .gameWrap .content .btnBox .innBox ul li p {
+html body .gameWrap .content .center .btnBox .innBox ul li p {
   width: 100%;
   text-align: center;
   font-size: 16px;
   font-weight: bold;
-  color: #4d4d4d;
-  padding-top: 5px;
-  letter-spacing: 1px;
+  color: #2c2c2c;
+}
+html body .gameWrap .content .center .btnBox .innBox ul li .fixBox {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 110%;
+  border-radius: 5px;
+  background: #0000009d;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
 }
 html body .gameWrap .slotCenter {
   width: 1400px;

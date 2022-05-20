@@ -349,6 +349,16 @@
                  </div>
              </div>
         </div>
+        <div class="marqueeArea">
+            <div class="center">
+                <div class="marqueeWrap">
+                    <i class="marquee_ic"></i>
+                    <div class="marquee">
+                        <p>測試跑馬燈</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
         <div class="ad">
@@ -369,67 +379,85 @@
                     </div>
                 </div>
             </div>
+            <ul class="downBar">
+                <li>
+                    <i class="depositTeach"></i>
+                    存款教學
+                </li>
+                <li>
+                    <i class="withdrawalTeach"></i>
+                    提款教學
+                </li>
+                <li>
+                    <i class="walletTeach"></i>
+                    錢包教學
+                </li>
+                <li>
+                    <i class="vip"></i>
+                    VIP會員
+                </li>
+            </ul>
             <div class="center">
                 <ul class="typeList">
+                    <li class="slot" onclick="unlogin()">
+                        <img src="./images/enter/slot.png" alt="">
+                    </li>
                     <li class="sport" onclick="unlogin()">
-                        <div class="img"></div>
-                        <div class="wordBox">
-                            <p class="game">體育賽事</p>
-                            <p class="type">SPORT</p>
-                        </div>
+                        <img src="./images/enter/sport.png" alt="">
                     </li>
                     <li class="live" onclick="unlogin()">
-                        <div class="img"></div>
-                        <div class="wordBox">
-                            <p class="game">真人娛樂</p>
-                            <p class="type">LIVE</p>
-                        </div>
-                    </li>
-                    <li class="slot" onclick="unlogin()">
-                        <div class="img"></div>
-                        <div class="wordBox">
-                            <p class="game">老虎機</p>
-                            <p class="type">SLOT</p>
-                        </div>
+                        <img src="./images/enter/live.png" alt="">
                     </li>
                     <li class="lottery" onclick="unlogin()">
-                        <div class="img"></div>
-                        <div class="wordBox">
-                            <p class="game">彩票</p>
-                            <p class="type">LOTTERY</p>
-                        </div>
+                        <img src="./images/enter/lottery.png" alt="">
                     </li>
                     <li class="fish" onclick="unlogin()">
-                        <div class="img"></div>
-                        <div class="wordBox">
-                            <p class="game">捕魚機</p>
-                            <p class="type">FISHING</p>
-                        </div>
+                        <img src="./images/enter/fish.png" alt="">
                     </li>
                     <li class="board" onclick="unlogin()">
-                        <div class="img"></div>
-                        <div class="wordBox">
-                            <p class="game">棋牌遊戲</p>
-                            <p class="type">BOARD</p>
-                        </div>
+                        <img src="./images/enter/board.png" alt="">
+                    </li>
+                    <li class="sportLive" onclick="unlogin()">
+                        <img src="./images/enter/sportLive.png" alt="">
+                    </li>
+                    <li class="av" onclick="unlogin()">
+                        <img src="./images/enter/av.png" alt="">
                     </li>
                 </ul>
-                <ul class="downBar">
+            </div>
+            <div class="downBox">
+                <ul>
                     <li>
-                        <i class="depositTeach"></i>
-                        存款教學
+                        <i class="trust_ic"></i>
+                        <div class="textBox">
+                            <p class="title">/值得信賴</p>
+                            <p>業界老品牌</p>
+                            <p>用心耕耘,誠信經營</p>
+                        </div>
                     </li>
                     <li>
-                        <i class="withdrawalTeach"></i>
-                        提款教學
+                        <i class="promise_ic"></i>
+                        <div class="textBox">
+                            <p class="title">/服務承諾</p>
+                            <p>存款1分鐘</p>
+                            <p>提款3分鐘立即到帳</p>
+                        </div>
                     </li>
                     <li>
-                        <i class="walletTeach"></i>
-                        錢包教學
+                        <i class="product_ic"></i>
+                        <div class="textBox">
+                            <p class="title">/產品優勢</p>
+                            <p>精挑細選業界頂尖平台</p>
+                            <p>只為給您提供優質的用戶體驗</p>
+                        </div>
                     </li>
                     <li>
-                        <i class="vip"></i>
-                        VIP會員
+                        <i class="service_ic"></i>
+                        <div class="textBox">
+                            <p class="title">/優質服務</p>
+                            <p>24小時不間斷在線客服</p>
+                            <p>極速存提款</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -489,7 +517,7 @@
         </div>
     </footer>
     <div class="filter">
-        <div class="jumpWindow betWindow sportGame01">
+        <div class="jumpWindow betWindow sportGame">
             <i class="close_ic"></i>
             <div class="betTitle">36588</div>
             <form>
@@ -527,7 +555,7 @@
                 <button>進入遊戲</button>
             </div>
         </div>
-        <div class="jumpWindow betWindow liveGame01">
+        <div class="jumpWindow betWindow liveGame">
             <i class="close_ic"></i>
             <div class="betTitle">ALLBET</div>
             <form>
@@ -565,45 +593,7 @@
                 <button>進入遊戲</button>
             </div>
         </div>
-        <div class="jumpWindow betWindow liveGame02">
-            <i class="close_ic"></i>
-            <div class="betTitle">WM</div>
-            <form>
-                <div class="row">
-                    <p>中心錢包</p>
-                    <input type="text" value="$9999">
-                </div>
-                <div class="row">
-                    <i class="trans_arrow"></i>
-                </div>
-                <div class="row">
-                    <p>WM真人</p>
-                    <input type="text" value="$0">
-                </div>
-                <div class="row">
-                    <p>轉帳金額</p>
-                    <input type="text" value="$100">
-                </div>
-                <div class="row forBtn">
-                    <div class="btnBox">
-                        <button>$100</button>
-                        <button>$500</button>
-                        <button>$1000</button>
-                        <button>$3000</button>
-                        <button>$5000</button>
-                        <button>$10000</button>
-                        <button>全部</button>
-                    </div>
-                </div>
-                <div class="row forBtn">
-                    <button class="check">確認</button>
-                </div>
-            </form>
-            <div class="enterGame">
-                <button>進入遊戲</button>
-            </div>
-        </div>
-        <div class="jumpWindow betWindow lotteryGame01">
+        <div class="jumpWindow betWindow lotteryGame">
             <i class="close_ic"></i>
             <div class="betTitle">SG</div>
             <form>
@@ -641,45 +631,7 @@
                 <button>進入遊戲</button>
             </div>
         </div>
-        <div class="jumpWindow betWindow lotteryGame02">
-            <i class="close_ic"></i>
-            <div class="betTitle">GS</div>
-            <form>
-                <div class="row">
-                    <p>中心錢包</p>
-                    <input type="text" value="$9999">
-                </div>
-                <div class="row">
-                    <i class="trans_arrow"></i>
-                </div>
-                <div class="row">
-                    <p>GS彩票</p>
-                    <input type="text" value="$0">
-                </div>
-                <div class="row">
-                    <p>轉帳金額</p>
-                    <input type="text" value="$100">
-                </div>
-                <div class="row forBtn">
-                    <div class="btnBox">
-                        <button>$100</button>
-                        <button>$500</button>
-                        <button>$1000</button>
-                        <button>$3000</button>
-                        <button>$5000</button>
-                        <button>$10000</button>
-                        <button>全部</button>
-                    </div>
-                </div>
-                <div class="row forBtn">
-                    <button class="check">確認</button>
-                </div>
-            </form>
-            <div class="enterGame">
-                <button>進入遊戲</button>
-            </div>
-        </div>
-        <div class="jumpWindow betWindow slotGame01">
+        <div class="jumpWindow betWindow slotGame">
             <i class="close_ic"></i>
             <div class="betTitle">老虎機</div>
             <form>
@@ -717,7 +669,7 @@
                 <button>進入遊戲</button>
             </div>
         </div>
-        <div class="jumpWindow betWindow fishGame01">
+        <div class="jumpWindow betWindow fishGame">
             <i class="close_ic"></i>
             <div class="betTitle">捕魚機</div>
             <form>
@@ -755,7 +707,7 @@
                 <button>進入遊戲</button>
             </div>
         </div>
-        <div class="jumpWindow betWindow boardGame01">
+        <div class="jumpWindow betWindow boardGame">
             <i class="close_ic"></i>
             <div class="betTitle">棋牌遊戲</div>
             <form>

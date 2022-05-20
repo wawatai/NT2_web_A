@@ -366,24 +366,23 @@
         <div class="gameWrap">
             <div class="content sportPage">
                 <div class="center">
-                    <img class="mainImg" src="../images/platform/sport/sport.png">
+                    <img class="mainImg" src="../images/platform/sport/sportImg_1.png">
                     <div class="textBox">
                         <div class="title">
-                            <p class="big">體育賽事</p>
-                            <p class="small">SPORT GAMES</p>
+                            <p class="big">SPORT GAMES</p>
+                            <p class="small">體育賽事</p>
                         </div>
-                        <p class="mainCnt">
-                            每月支援全球超過30000 場運動類型投註賽事，提供多元投註方式包含足球、
-                            棒球、籃球及橄欖球等世界主要體育競賽，由專業的資訊管理團隊提供最準確
-                            即時的賽事結果與24小時線上投註服務，更備有亞洲盤、歐洲盤、香港盤、印
-                            尼盤及馬來盤等賠率盤口供玩家選擇。 
-                        </p>
+                        <p class="mainCnt">每月支援全球超過30000 場運動類型投注賽事，提供多元投注方式包含足球丶棒球丶籃球及橄欖球等世界主要體育競賽，由專業的資訊管理團隊提供最準確即時的賽事結果與24小時線上投注服務，多種等賠率盤口供玩家選擇。</p>
                         <div class="btnBox">
                             <div class="innBox">
                                 <ul>
-                                    <li class="sportGame01">
-                                        <img src="../images/platform/sport/sportBtn.png">
+                                    <li onclick="openSportGame()">
+                                        <img src="../images/platform/sport/sportBtn_1.png">
                                         <p>36588體育</p>
+                                    </li>
+                                    <li onclick="openSportGame()">
+                                        <img src="../images/platform/sport/sportBtn_2.png">
+                                        <p>平博體育</p>
                                     </li>
                                 </ul>
                             </div>
@@ -391,7 +390,7 @@
                     </div>
                 </div>
             </div>
-            <ul class="downBar">
+            <ul class="downBar inner">
                 <li onclick="window.location.href='./help.html'">
                     <i class="depositTeach"></i>
                     存款教學
@@ -513,7 +512,7 @@
                 </li>
             </ul>
         </div>
-        <div class="jumpWindow betWindow sportGame01">
+        <div class="jumpWindow betWindow sportGame">
             <i class="close_ic"></i>
             <div class="betTitle">36588</div>
             <form>
@@ -551,7 +550,7 @@
                 <button>進入遊戲</button>
             </div>
         </div>
-        <div class="jumpWindow betWindow liveGame01">
+        <div class="jumpWindow betWindow liveGame">
             <i class="close_ic"></i>
             <div class="betTitle">ALLBET</div>
             <form>
@@ -589,45 +588,7 @@
                 <button>進入遊戲</button>
             </div>
         </div>
-        <div class="jumpWindow betWindow liveGame02">
-            <i class="close_ic"></i>
-            <div class="betTitle">WM</div>
-            <form>
-                <div class="row">
-                    <p>中心錢包</p>
-                    <input type="text" value="$9999">
-                </div>
-                <div class="row">
-                    <i class="trans_arrow"></i>
-                </div>
-                <div class="row">
-                    <p>WM真人</p>
-                    <input type="text" value="$0">
-                </div>
-                <div class="row">
-                    <p>轉帳金額</p>
-                    <input type="text" value="$100">
-                </div>
-                <div class="row forBtn">
-                    <div class="btnBox">
-                        <button>$100</button>
-                        <button>$500</button>
-                        <button>$1000</button>
-                        <button>$3000</button>
-                        <button>$5000</button>
-                        <button>$10000</button>
-                        <button>全部</button>
-                    </div>
-                </div>
-                <div class="row forBtn">
-                    <button class="check">確認</button>
-                </div>
-            </form>
-            <div class="enterGame">
-                <button>進入遊戲</button>
-            </div>
-        </div>
-        <div class="jumpWindow betWindow lotteryGame01">
+        <div class="jumpWindow betWindow lotteryGame">
             <i class="close_ic"></i>
             <div class="betTitle">SG</div>
             <form>
@@ -665,45 +626,7 @@
                 <button>進入遊戲</button>
             </div>
         </div>
-        <div class="jumpWindow betWindow lotteryGame02">
-            <i class="close_ic"></i>
-            <div class="betTitle">GS</div>
-            <form>
-                <div class="row">
-                    <p>中心錢包</p>
-                    <input type="text" value="$9999">
-                </div>
-                <div class="row">
-                    <i class="trans_arrow"></i>
-                </div>
-                <div class="row">
-                    <p>GS彩票</p>
-                    <input type="text" value="$0">
-                </div>
-                <div class="row">
-                    <p>轉帳金額</p>
-                    <input type="text" value="$100">
-                </div>
-                <div class="row forBtn">
-                    <div class="btnBox">
-                        <button>$100</button>
-                        <button>$500</button>
-                        <button>$1000</button>
-                        <button>$3000</button>
-                        <button>$5000</button>
-                        <button>$10000</button>
-                        <button>全部</button>
-                    </div>
-                </div>
-                <div class="row forBtn">
-                    <button class="check">確認</button>
-                </div>
-            </form>
-            <div class="enterGame">
-                <button>進入遊戲</button>
-            </div>
-        </div>
-        <div class="jumpWindow betWindow slotGame01">
+        <div class="jumpWindow betWindow slotGame">
             <i class="close_ic"></i>
             <div class="betTitle">老虎機</div>
             <form>
@@ -741,7 +664,7 @@
                 <button>進入遊戲</button>
             </div>
         </div>
-        <div class="jumpWindow betWindow fishGame01">
+        <div class="jumpWindow betWindow fishGame">
             <i class="close_ic"></i>
             <div class="betTitle">捕魚機</div>
             <form>
@@ -779,7 +702,7 @@
                 <button>進入遊戲</button>
             </div>
         </div>
-        <div class="jumpWindow betWindow boardGame01">
+        <div class="jumpWindow betWindow boardGame">
             <i class="close_ic"></i>
             <div class="betTitle">棋牌遊戲</div>
             <form>
