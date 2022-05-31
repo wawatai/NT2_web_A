@@ -552,7 +552,13 @@ $(function(){
         $(".livePage .mainImg")
         .attr("src","../images/platform/live/liveImg_"+ (n + 1) +".png");
 
-        $(".sportPage .mainImg")
-        .attr("src","../images/platform/sport/sportImg_"+ (n + 1) +".png");
+        $(".lotteryPage .mainImg")
+        .attr("src","../images/platform/lottery/lotteryImg_"+ (n + 1) +".png");
+
+        $(".slotPage .mainImg")
+        .attr("src","../images/platform/slot/slotImg_"+ (n + 1) +".png");
+
+        $(".boardPage .mainImg")
+        .attr("src","../images/platform/board/boardImg_"+ (n + 1) +".png");
     })
 })

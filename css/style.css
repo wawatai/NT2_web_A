@@ -2361,11 +2361,6 @@ html body .gameWrap .content {
   height: auto;
   margin-bottom: 48px;
 }
-html body .gameWrap .content.slotPage {
-  width: 1400px;
-  height: auto;
-  margin: 0 auto;
-}
 html body .gameWrap .content .center {
   width: 1400px;
   height: 100%;
