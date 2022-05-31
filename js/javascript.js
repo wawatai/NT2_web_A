@@ -134,6 +134,7 @@ $(function(){
         $('header .user').removeClass('login');
         $('header .user').addClass('userInfo');
         $('.gameNav li').removeClass('unlogin');
+
         $('header .sportBtn,.typeList .sport').attr("onclick","window.location.href='./html/sportPage.html'");
         $('header .liveBtn,.typeList .live').attr("onclick","window.location.href='./html/livePage.html'");
         $('header .slotBtn,.typeList .slot').attr("onclick","window.location.href='./html/slotPage.html'");
@@ -145,8 +146,8 @@ $(function(){
 
         $('.topGameList .sport li').attr("onclick","openSportGame()");
         $('.topGameList .live li').attr("onclick","openLiveGame()");
-        $('.topGameList .slot li').attr("onclick","openSlotGame()");
-        $('.topGameList .fish li').attr("onclick","openFishGame()");
+        $('.topGameList .slot li').attr("onclick","window.location.href='./slotPageInner.html'");
+        $('.topGameList .fish li').attr("onclick","window.location.href='./fishPageInner.html'");
         $('.topGameList .lottery li').attr("onclick","openLotteryGame()");
         $('.topGameList .board li').attr("onclick","openBoardGame()");
     })

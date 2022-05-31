@@ -4,8 +4,8 @@ header .gameNav {
     background-size: cover;
 }
 header .topGameList {
-    background: url('../images/headerList.png') no-repeat;
-    background-size: cover;  
+    background: url('../images/headerList.jpg');
+    // background-color: #efefef;
 }
 header .acc_ic {
     background: url('../images/icon/svg/id.svg') no-repeat;
@@ -81,6 +81,11 @@ header .logout_ic {
 }
 .rightSide .goTop i {
     background: url('../images/icon/svg/gotop.svg') no-repeat;
+    background-size: 100%;
+}
+//.rightSide .smallBoard .arrow
+.rightSide .smallBoard .arrow {
+    background: url('../images/icon/svg/arrow_r.svg') no-repeat;
     background-size: 100%;
 }
 
@@ -198,6 +203,15 @@ footer .top button::before {
 }
 .jumpWindow .close_ic_gray {
     background: url('../images/icon/svg/close_gray.svg') no-repeat;
+    background-size: 100%;
+}
+//jumpWindow.betWindow .cancel_ic
+.jumpWindow.betWindow .close_ic {
+    background: url('../images/icon/svg/close_gray.svg') no-repeat;
+    background-size: 100%;
+}
+.jumpWindow.betWindow .trans_arrow {
+    background: url('../images/icon/svg/transfer_arrow.svg') no-repeat;
     background-size: 100%;
 }
 
@@ -354,12 +368,6 @@ footer .top button::before {
     background-size: 100%;
 }
 
-//.rightSide .smallBoard .arrow
-.rightSide .smallBoard .arrow {
-    background: url('../images/icon/svg/arrow_r.svg') no-repeat;
-    background-size: 100%;
-}
-
 //.mailWrap.innerMode .title .arrow_ic
 .mailWrap.innerMode .title .arrow_ic {
     background: url('../images/icon/svg/arrow_r.svg') no-repeat;
@@ -476,16 +484,6 @@ footer .top button::before {
     background-size: 100%;
 }
 
-//jumpWindow.betWindow .cancel_ic
-.jumpWindow.betWindow .close_ic {
-    background: url('../images/icon/svg/close_gray.svg') no-repeat;
-    background-size: 100%;
-}
-.jumpWindow.betWindow .trans_arrow {
-    background: url('../images/icon/svg/transfer_arrow.svg') no-repeat;
-    background-size: 100%;
-}
-
 //register
 .registerWrap {
     background: url('../images/register_background.png') no-repeat;
@@ -509,6 +507,11 @@ footer .top button::before {
 ////////img↓↓↓↓↓↓↓↓↓
 
 
+//logo
+header .logo {
+    width: 119px;
+    height: 53px;
+}
 //header 下拉選單
 header .topGameList div {
     width: 220px;
@@ -530,30 +533,6 @@ header .topGameList div {
 //入口頁中央遊戲enter .mainWrap .img
 .mainWrap .typeList img {
     width: 100%;
-}
-.mainWrap .typeList .sport .img {
-    background: url('../images/enter/sport.png') no-repeat;
-    background-size: 100%;
-}
-.mainWrap .typeList .live .img {
-    background: url('../images/enter/live.png') no-repeat;
-    background-size: 100%;
-}
-.mainWrap .typeList .slot .img {
-    background: url('../images/enter/slot.png') no-repeat;
-    background-size: 100%;
-}
-.mainWrap .typeList .lottery .img {
-    background: url('../images/enter/lottery.png') no-repeat;
-    background-size: 100%;
-}
-.mainWrap .typeList .fish .img {
-    background: url('../images/enter/fish.png') no-repeat;
-    background-size: 100%;
-}
-.mainWrap .typeList .board .img {
-    background: url('../images/enter/board.png') no-repeat;
-    background-size: 100%;
 }
 
 //gameWrap
@@ -590,8 +569,8 @@ header .topGameList div {
 .eventBox {
     
     .imgBox {
-        width: 719px;
-        height: 296px;
+        width: 100%;
+        height: 287px;
 
         img {
             width: 100%;
@@ -628,12 +607,6 @@ header .topGameList div {
             object-fit: cover;
         }
     }
-}
-
-//logo
-header .logo {
-    width: 119px;
-    height: 53px;
 }
 
 //register .logo

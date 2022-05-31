@@ -374,7 +374,7 @@ header {
         overflow: hidden;
         position: absolute;
         left: 0px;
-        bottom: -336px;
+        top: 128px;
         z-index: 10;
 
         &.display {
@@ -383,7 +383,7 @@ header {
 
         .listWrap {
             width: 100%;
-            height: 336px;
+            height: auto;
             box-shadow: inset 0 10px 30px 0 $boxShadow_3;
 
             .center {
@@ -424,9 +424,11 @@ header {
                         width: 100%;
                         height: 100%;
                         transition: 0.6s ease;
+                        grid-template-columns: repeat(6,1fr);
+                        grid-auto-rows: 226px;
 
                         &.display {
-                            display: flex;
+                            display: grid;
                         }
 
                         li {
