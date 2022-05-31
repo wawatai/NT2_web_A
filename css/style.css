@@ -288,11 +288,6 @@ footer .top button::before {
   background-size: cover;
 }
 
-.slotBody .pfName .bng_ic {
-  background: url("../images/icon/bng_pf.png") no-repeat;
-  background-size: 100%;
-}
-
 .slotBody .pfName .back {
   background: url("../images/icon/svg/arrow_r.svg") no-repeat;
   background-size: 100%;
