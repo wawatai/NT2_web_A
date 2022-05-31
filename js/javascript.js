@@ -149,7 +149,7 @@ $(function(){
         $('.topGameList .slot li').attr("onclick","window.location.href='./slotPageInner.html'");
         $('.topGameList .fish li').attr("onclick","window.location.href='./fishPageInner.html'");
         $('.topGameList .lottery li').attr("onclick","openLotteryGame()");
-        $('.topGameList .board li').attr("onclick","openBoardGame()");
+        $('.topGameList .board li').attr("onclick","window.location.href='./boardPageInner.html'");
     })
 })
 
