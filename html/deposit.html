@@ -13,7 +13,7 @@
     <script src="../js/javascript.js"></script>
     <link rel="shortcut icon" href="../images/myIco.ico" type="image/x-icon">
 </head>
-<body>
+<body onload="currentTime()">
     <header>
         <div class="top">
             <div class="langBox">
@@ -24,6 +24,9 @@
                     <option>日本語</option>
                 </select>
             </div>
+            <span class="brad">
+                <span class="time"></span>
+            </span>
             <ul class="user userInfo">
                 <li class="loginPart">
                     <form class="loginForm">
@@ -479,11 +482,11 @@
                                     <i class="prev"></i>
                                     <div class="box">
                                         <ul>
-                                            <li class="active">
+                                            <li class="shopBtn active">
                                                 <i class="card_ic"></i>
                                                 超商儲值
                                             </li>
-                                            <li>
+                                            <li class="atmBtn">
                                                 <i class="shop_ic"></i>
                                                 網路ATM
                                             </li>
@@ -493,29 +496,68 @@
                                 </div>
                             </div>
                             <div class="bottom">
-                                <p class="title">超商儲值</p>
-                                <div class="content">
-                                    <form>
-                                        <div class="row">
-                                            <i>※</i>
-                                            提交申請
-                                            <select>
-                                                <option></option>
-                                            </select>
+                                <div class="shop display">
+                                    <p class="title">超商儲值</p>
+                                    <div class="content">
+                                        <form>
+                                            <div class="row">
+                                                <i>※</i>
+                                                選擇通道
+                                                <select>
+                                                    <option>超商代碼繳費</option>
+                                                </select>
+                                            </div>
+                                            <div class="row noTitle">
+                                                <select>
+                                                    <option>全家超商FamilyMart</option>
+                                                </select>
+                                            </div>
+                                            <div class="row">
+                                                <i>※</i>
+                                                存款金額
+                                                <input type="text" placeholder="請輸入充值金額">
+                                                <p class="remind">單筆存款金額1,000~20,000</p>
+                                            </div>
+                                            <button type="button" class="check">立即存款</button>
+                                        </form>
+                                        <div class="remindBox">
+                                            <div class="title">重要提醒</div>
+                                            <div>1.系統將發配一組專屬交易單號，請至您選擇的超商門市進行繳費。</div>
+                                            <div>2.繳費完成後請妥善保管交易收據，以便查證。</div>
+                                            <div>3.為了加快上分速度，請至交易紀錄上傳交易成功的明細。</div>
                                         </div>
-                                        <div class="row">
-                                            <i>※</i>
-                                            存款金額
-                                            <input type="text">
-                                            <p class="remind">單筆存款金額1000~2000</p>
+                                    </div>
+                                </div>
+                                <div class="atm">
+                                    <p class="title">ATM轉帳</p>
+                                    <div class="content">
+                                        <form>
+                                            <div class="row">
+                                                <i>※</i>
+                                                選擇通道
+                                                <select>
+                                                    <option>網銀轉帳</option>
+                                                </select>
+                                            </div>
+                                            <div class="row noTitle">
+                                                <select>
+                                                    <option>永豐銀行Bank SinoPac</option>
+                                                </select>
+                                            </div>
+                                            <div class="row">
+                                                <i>※</i>
+                                                存款金額
+                                                <input type="text" placeholder="請輸入充值金額">
+                                                <p class="remind">單筆存款金額1,000~100,000</p>
+                                            </div>
+                                            <button type="button">立即存款</button>
+                                        </form>
+                                        <div class="remindBox">
+                                            <div class="title">重要提醒</div>
+                                            <div>1.系統將發配一組專屬交易單號，請至您選擇的超商門市進行繳費。</div>
+                                            <div>2.繳費完成後請妥善保管交易收據，以便查證。</div>
+                                            <div>3.為了加快上分速度，請至交易紀錄上傳交易成功的明細。</div>
                                         </div>
-                                        <button>確認送出</button>
-                                    </form>
-                                    <div class="remindBox">
-                                        <div class="title">重要提醒</div>
-                                        <div>1.系統將發配一組專屬交易單號，請至您選擇的超商門市進行繳費。</div>
-                                        <div>2.繳費完成後請妥善保管交易收據，以便查證。</div>
-                                        <div>3.為了加快上分速度，請至交易紀錄上傳交易成功的明細。</div>
                                     </div>
                                 </div>
                             </div>

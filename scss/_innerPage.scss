@@ -946,6 +946,27 @@
                 }
             }
 
+            .remindBox {
+                width: 100%;
+                height: auto;
+                box-sizing: border-box;
+                padding: 30px 18px 0;
+
+                p {
+                    color: $fontColor_3;
+                    font-size: 16px;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                    line-height: 18px;
+
+                    &.title {
+                        color: $fontColor_9;
+                        font-size: 20px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+
             hr {
                 margin-top: 28px;
             }
@@ -987,9 +1008,10 @@
                         .total {
                             width: 50%;
                             box-sizing: border-box;
-                            padding: 14px 0 0 24px;
+                            padding: 14px 0 0 25px;
                             height: 203px;
                             border-right: solid 1px $borderColor_2;
+                            position: relative;
                             
                             .totalTitle {
                                 display: flex;
@@ -1046,6 +1068,15 @@
                                             }
                                         }
                                     }
+                                }
+
+                                button {
+                                    width: 71px;
+                                    height: 23px;
+                                    @include buttonStyle_3;
+                                    position: absolute;
+                                    top: 14px;
+                                    right: 25px;
                                 }
                             }
 
@@ -3055,84 +3086,96 @@
                     border-radius: 5px;
                     box-sizing: border-box;
 
-                    .title {
-                        font-size: 17px;
-                        letter-spacing: 2px;
-                        color: $fontColor_3;
-                        font-weight: bold;
-                    }
+                    &>div {
+                        display: none;
 
-                    .content {
-                        margin-top: 26px;
-
-                        form {
-                            width: 100%;
-                            height: auto;
-
-                            .row {
-                                display: flex;
-                                align-items: center;
-                                height: 41px;
-                                margin-bottom: 22px;
-                                font-weight: bold;
-                                font-size: 16px;
-                                color: $fontColor_2;
-                                position: relative;
-
-                                i {
-                                    font-size: 16px;
-                                    color: $fontColor_4;
-                                    margin-right: 5px;
-                                }
-
-                                select {
-                                    width: 257px;
-                                    height: 41px;
-                                    margin-left: 26px;
-                                    @include selectStyle_1;
-                                }
-
-                                input {
-                                    width: 257px;
-                                    height: 41px;
-                                    margin-left: 26px;
-                                    @include inputStyle_3;
-                                }
-
-                                .remind {
-                                    position: absolute;
-                                    bottom: -25px;
-                                    left: 108px;
-                                    font-size: 12px;
-                                    letter-spacing: 1px;
-                                    color: $fontColor_7;
-                                }
-                            }
-
-                            button {
-                                width: 257px;
-                                height: 41px;
-                                margin: 46px 0 0 108px;
-                                @include buttonStyle_3;
-                            }
+                        &.display {
+                            display: block;
                         }
 
-                        .remindBox {
-                            width: 839px;
-                            height: auto;
-                            padding: 15px 19px;
-                            margin: 39px 0 0 -10px;
-                            border: solid 1px $borderColor_9;
-                            box-sizing: border-box;
-
-                            div {
-                                color: $fontColor_10;
-                                font-size: 13px;
-                                letter-spacing: 1px;
-                                margin-bottom: 11px;
-
-                                &.title {
-                                    color: $fontColor_9;
+                        .title {
+                            font-size: 17px;
+                            letter-spacing: 2px;
+                            color: $fontColor_3;
+                            font-weight: bold;
+                        }
+    
+                        .content {
+                            margin-top: 26px;
+    
+                            form {
+                                width: 100%;
+                                height: auto;
+    
+                                .row {
+                                    display: flex;
+                                    align-items: center;
+                                    height: 41px;
+                                    margin-bottom: 22px;
+                                    font-weight: bold;
+                                    font-size: 16px;
+                                    color: $fontColor_2;
+                                    position: relative;
+    
+                                    &.noTitle {
+                                        margin-left: 82px;
+                                    }
+    
+                                    i {
+                                        font-size: 16px;
+                                        color: $fontColor_4;
+                                        margin-right: 5px;
+                                    }
+    
+                                    select {
+                                        width: 257px;
+                                        height: 41px;
+                                        margin-left: 26px;
+                                        @include selectStyle_1;
+                                    }
+    
+                                    input {
+                                        width: 257px;
+                                        height: 41px;
+                                        margin-left: 26px;
+                                        @include inputStyle_3;
+                                    }
+    
+                                    .remind {
+                                        position: absolute;
+                                        bottom: -25px;
+                                        left: 108px;
+                                        font-size: 12px;
+                                        letter-spacing: 1px;
+                                        color: $fontColor_7;
+                                    }
+                                }
+    
+                                button {
+                                    width: 257px;
+                                    height: 41px;
+                                    margin: 46px 0 0 108px;
+                                    @include buttonStyle_3;
+                                }
+                            }
+    
+                            .remindBox {
+                                width: 839px;
+                                height: auto;
+                                padding: 15px 19px;
+                                margin: 39px 0 0 -10px;
+                                border: solid 1px $borderColor_9;
+                                box-sizing: border-box;
+    
+                                div {
+                                    color: $fontColor_10;
+                                    font-size: 13px;
+                                    letter-spacing: 1px;
+                                    margin-bottom: 11px;
+    
+                                    &.title {
+                                        color: $fontColor_9;
+                                    }
                                 }
                             }
                         }

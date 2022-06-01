@@ -8,7 +8,7 @@ function currentTime() {
     m = now.getMinutes();
     s = now.getSeconds();
     var curTime = document.getElementsByClassName('time');
-    curTime[0].innerHTML = '現在時間: '+yy+'年 '+mm+'月 '+dd+'日 '+h+':'+m+':'+ s;
+    curTime[0].innerHTML = yy+'年 '+mm+'月 '+dd+'日 '+h+':'+m+':'+ s;
     setTimeout('currentTime()',1000);
 }
 
@@ -513,6 +513,26 @@ $(function(){
         $body.delay('0').animate({
                 scrollTop: 0
         },300);
+    })
+})
+
+//deposit切換
+$(function(){
+    $(".depositWrap .list li").click(function(){
+        $(this)
+        .addClass("active")
+        .siblings().removeClass("active");
+    })
+
+    $(".depositWrap .list .shopBtn").click(function(){
+        $(".depositWrap .bottom .shop")
+        .addClass("display")
+        .siblings().removeClass("display");
+    })
+    $(".depositWrap .list .atmBtn").click(function(){
+        $(".depositWrap .bottom .atm")
+        .addClass("display")
+        .siblings().removeClass("display");
     })
 })
 

@@ -13,7 +13,7 @@
     <script src="../js/javascript.js"></script>
     <link rel="shortcut icon" href="../images/myIco.ico" type="image/x-icon">
 </head>
-<body>
+<body onload="currentTime()">
     <header>
         <div class="top">
             <div class="langBox">
@@ -24,6 +24,9 @@
                     <option>日本語</option>
                 </select>
             </div>
+            <span class="brad">
+                <span class="time"></span>
+            </span>
             <ul class="user userInfo">
                 <li class="loginPart">
                     <form class="loginForm">
@@ -482,6 +485,7 @@
                                                     </p>
                                                 </div>
                                             </div>
+                                            <button>一鍵回收</button>
                                         </div>
                                         <div class="amount">$9999</div>
                                     </div>
