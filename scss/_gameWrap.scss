@@ -1,5 +1,5 @@
 .gameWrap {
-    padding: 35px 0 66px;
+    padding-top: 35px;
     background: $backgroundColor_4;
 
     //主內容
@@ -7,7 +7,6 @@
         width: 100%;
         min-width: 1400px;
         height: auto;
-        margin-bottom: 48px;
 
         .center {
             width: 1400px;
@@ -358,40 +357,6 @@
                         }
                     }
                 }
-            }
-        }
-    }
-
-    //下橫條選單
-    .downBar {
-        width: 1400px;
-        height: 120px;
-        border-radius: 10px;
-        background: $linear_1;
-        box-shadow: 0px 5px 10px 0px $boxShadow_2;
-        display: flex;
-        margin: 0 auto;
-
-        li {
-            width: 25%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            justify-content: center;
-            font-weight: bold;
-            color: $fontColor_2;
-            border-right: solid 1px $borderColor_2;
-            cursor: pointer;
-
-            &:last-child {
-                border: none;
-            }
-
-            i {
-                width: 46px;
-                height: 46px;
-                margin-bottom: 14px;
             }
         }
     }

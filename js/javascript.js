@@ -270,7 +270,7 @@ $(function(){
 
 //eventList+eventDetail 切換
 $(function(){
-    $('.eventBox .btnBox button').click(function(){
+    $('.eventBox .imgBox').click(function(){
         $('.eventList').removeClass('display');
         $('.eventDetail').addClass('display');
     })

@@ -255,7 +255,7 @@ footer .top button::before {
 }
 //eventBody .side li i
 .eventBody .event_ic {
-    background: url('../images/icon/svg/entire.svg') no-repeat;
+    background: url('../images/icon/svg/event.svg') no-repeat;
     background-size: 100%;
 }
 //eventDetail .back
@@ -565,12 +565,13 @@ header .topGameList div {
     
     .imgBox {
         width: 100%;
-        height: 287px;
-
+        height: auto;
+        
         img {
             width: 100%;
-            height: 100%;
             object-fit: cover;
+            border-radius: 5px;
+            cursor: pointer;
         }
     }
 }
@@ -579,11 +580,9 @@ header .topGameList div {
 
     .imgBox {
         width: 100%;
-        height: 423px;
 
         img {
             width: 100%;
-            height: 100%;
             object-fit: cover;
         }
     }

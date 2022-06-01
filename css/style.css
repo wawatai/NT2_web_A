@@ -314,7 +314,7 @@ footer .top button::before {
 }
 
 .eventBody .event_ic {
-  background: url("../images/icon/svg/entire.svg") no-repeat;
+  background: url("../images/icon/svg/event.svg") no-repeat;
   background-size: 100%;
 }
 
@@ -629,22 +629,21 @@ header .topGameList div img {
 
 .eventBox .imgBox {
   width: 100%;
-  height: 287px;
+  height: auto;
 }
 .eventBox .imgBox img {
   width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .eventDetail .imgBox {
   width: 100%;
-  height: 423px;
 }
 .eventDetail .imgBox img {
   width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1744,8 +1743,8 @@ html body .filter .jumpWindow.forgetPassword form button {
   width: 322px;
   height: 42px;
   margin-top: 15px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ea232d), color-stop(50%, #a80d0c), to(#ea232d));
+  background: linear-gradient(to bottom, #ea232d 0, #a80d0c 50%, #ea232d 100%);
   border: solid 1px #cca172;
   border-radius: 3px;
   color: #ffffff;
@@ -1754,8 +1753,8 @@ html body .filter .jumpWindow.forgetPassword form button {
   letter-spacing: 1px;
 }
 html body .filter .jumpWindow.forgetPassword form button:hover, html body .filter .jumpWindow.forgetPassword form button:active, html body .filter .jumpWindow.forgetPassword form button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#b90b0a), to(#ea232d));
+  background: linear-gradient(to bottom, #b90b0a 0%, #ea232d 100%);
 }
 html body .filter .jumpWindow.forgetPassword form p {
   font-size: 14px;
@@ -1885,8 +1884,8 @@ html body .filter .jumpWindow.plsGo .btnBox {
 html body .filter .jumpWindow.plsGo .btnBox button {
   width: 322px;
   height: 42px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ea232d), color-stop(50%, #a80d0c), to(#ea232d));
+  background: linear-gradient(to bottom, #ea232d 0, #a80d0c 50%, #ea232d 100%);
   border: solid 1px #cca172;
   border-radius: 3px;
   color: #ffffff;
@@ -1895,8 +1894,8 @@ html body .filter .jumpWindow.plsGo .btnBox button {
   letter-spacing: 1px;
 }
 html body .filter .jumpWindow.plsGo .btnBox button:hover, html body .filter .jumpWindow.plsGo .btnBox button:active, html body .filter .jumpWindow.plsGo .btnBox button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#b90b0a), to(#ea232d));
+  background: linear-gradient(to bottom, #b90b0a 0%, #ea232d 100%);
 }
 html body .filter .jumpWindow.score {
   display: none;
@@ -2053,8 +2052,8 @@ html body .filter .jumpWindow.passwordWindow form .btnBox {
 html body .filter .jumpWindow.passwordWindow form .btnBox button {
   width: 322px;
   height: 42px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ea232d), color-stop(50%, #a80d0c), to(#ea232d));
+  background: linear-gradient(to bottom, #ea232d 0, #a80d0c 50%, #ea232d 100%);
   border: solid 1px #cca172;
   border-radius: 3px;
   color: #ffffff;
@@ -2063,8 +2062,8 @@ html body .filter .jumpWindow.passwordWindow form .btnBox button {
   letter-spacing: 1px;
 }
 html body .filter .jumpWindow.passwordWindow form .btnBox button:hover, html body .filter .jumpWindow.passwordWindow form .btnBox button:active, html body .filter .jumpWindow.passwordWindow form .btnBox button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#b90b0a), to(#ea232d));
+  background: linear-gradient(to bottom, #b90b0a 0%, #ea232d 100%);
 }
 html body .filter .jumpWindow.walletRecord {
   width: 976px;
@@ -2154,8 +2153,8 @@ html body .filter .jumpWindow.checkEvent .btnBox {
 html body .filter .jumpWindow.checkEvent .btnBox button {
   width: 322px;
   height: 42px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ea232d), color-stop(50%, #a80d0c), to(#ea232d));
+  background: linear-gradient(to bottom, #ea232d 0, #a80d0c 50%, #ea232d 100%);
   border: solid 1px #cca172;
   border-radius: 3px;
   color: #ffffff;
@@ -2164,8 +2163,8 @@ html body .filter .jumpWindow.checkEvent .btnBox button {
   letter-spacing: 1px;
 }
 html body .filter .jumpWindow.checkEvent .btnBox button:hover, html body .filter .jumpWindow.checkEvent .btnBox button:active, html body .filter .jumpWindow.checkEvent .btnBox button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#b90b0a), to(#ea232d));
+  background: linear-gradient(to bottom, #b90b0a 0%, #ea232d 100%);
 }
 html body .filter .jumpWindow.betWindow {
   display: none;
@@ -2280,8 +2279,8 @@ html body .filter .jumpWindow.betWindow form .row .btnBox button:nth-of-type(3n)
 html body .filter .jumpWindow.betWindow form .row .check {
   width: 267px;
   height: 42px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ea232d), color-stop(50%, #a80d0c), to(#ea232d));
+  background: linear-gradient(to bottom, #ea232d 0, #a80d0c 50%, #ea232d 100%);
   border: solid 1px #cca172;
   border-radius: 3px;
   color: #ffffff;
@@ -2291,8 +2290,8 @@ html body .filter .jumpWindow.betWindow form .row .check {
   margin-bottom: 20px;
 }
 html body .filter .jumpWindow.betWindow form .row .check:hover, html body .filter .jumpWindow.betWindow form .row .check:active, html body .filter .jumpWindow.betWindow form .row .check.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#b90b0a), to(#ea232d));
+  background: linear-gradient(to bottom, #b90b0a 0%, #ea232d 100%);
 }
 html body .filter .jumpWindow.betWindow .enterGame {
   width: 100%;
@@ -2304,8 +2303,8 @@ html body .filter .jumpWindow.betWindow .enterGame {
 html body .filter .jumpWindow.betWindow .enterGame button {
   width: 351px;
   height: 42px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ea232d), color-stop(50%, #a80d0c), to(#ea232d));
+  background: linear-gradient(to bottom, #ea232d 0, #a80d0c 50%, #ea232d 100%);
   border: solid 1px #cca172;
   border-radius: 3px;
   color: #ffffff;
@@ -2314,8 +2313,8 @@ html body .filter .jumpWindow.betWindow .enterGame button {
   letter-spacing: 1px;
 }
 html body .filter .jumpWindow.betWindow .enterGame button:hover, html body .filter .jumpWindow.betWindow .enterGame button:active, html body .filter .jumpWindow.betWindow .enterGame button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#b90b0a), to(#ea232d));
+  background: linear-gradient(to bottom, #b90b0a 0%, #ea232d 100%);
 }
 html body .filter .jumpWindow .title {
   width: 100%;
@@ -2347,14 +2346,13 @@ html body .filter .jumpWindow .title i {
   cursor: pointer;
 }
 html body .gameWrap {
-  padding: 35px 0 66px;
+  padding-top: 35px;
   background: #f4f4f4;
 }
 html body .gameWrap .content {
   width: 100%;
   min-width: 1400px;
   height: auto;
-  margin-bottom: 48px;
 }
 html body .gameWrap .content .center {
   width: 1400px;
@@ -2613,8 +2611,8 @@ html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfNa
   margin-right: 20px;
 }
 html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .all {
-  background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ea232d), color-stop(50%, #a80d0c), to(#ea232d));
+  background: linear-gradient(to bottom, #ea232d 0, #a80d0c 50%, #ea232d 100%);
   border: solid 1px #cca172;
   border-radius: 3px;
   color: #ffffff;
@@ -2626,8 +2624,8 @@ html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfNa
   font-size: 18px;
 }
 html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .all:hover, html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .all:active, html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .all.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#b90b0a), to(#ea232d));
+  background: linear-gradient(to bottom, #b90b0a 0%, #ea232d 100%);
 }
 html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .all i {
   display: inline-block;
@@ -2755,48 +2753,6 @@ html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .game
 html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .gameList li .btnBox button:last-child:hover, html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .gameList li .btnBox button:last-child:active, html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .gameList li .btnBox button:last-child.active {
   background: #0e1c5e;
 }
-html body .gameWrap .downBar {
-  width: 1400px;
-  height: 120px;
-  border-radius: 10px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #ffffff), to(#f2f2f2));
-  background: linear-gradient(to bottom, #ffffff 40%, #f2f2f2 100%);
-  -webkit-box-shadow: 0px 5px 10px 0px #c0c0c0;
-          box-shadow: 0px 5px 10px 0px #c0c0c0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-}
-html body .gameWrap .downBar li {
-  width: 25%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-weight: bold;
-  color: #000000;
-  border-right: solid 1px #e6e6e6;
-  cursor: pointer;
-}
-html body .gameWrap .downBar li:last-child {
-  border: none;
-}
-html body .gameWrap .downBar li i {
-  width: 46px;
-  height: 46px;
-  margin-bottom: 14px;
-}
 html body .eventWrap {
   background: #f4f4f4;
   padding-top: 35px;
@@ -2879,7 +2835,7 @@ html body .eventWrap .eventBody .side ul li span {
 }
 html body .eventWrap .eventBody .eventList {
   display: none;
-  width: 1028px;
+  width: 1024px;
 }
 html body .eventWrap .eventBody .eventList.display {
   display: block;
@@ -3017,7 +2973,7 @@ html body .eventWrap .eventBody .eventDetail .detailFooter {
 }
 html body .innerPage {
   background: #f4f4f4;
-  padding: 20px 0 40px;
+  padding: 55px 0 40px;
 }
 html body .innerPage .center {
   width: 1400px;
@@ -3076,7 +3032,7 @@ html body .innerPage .center .innerSide .userInfo div .account .lv {
   padding: 3px 8px;
   margin-left: 10px;
   color: #ffffff;
-  background: #cfb53d;
+  background: #b90b0a;
   border-radius: 5px;
 }
 html body .innerPage .center .innerSide .userInfo div .days {
@@ -3403,8 +3359,8 @@ html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable l
   height: 42px;
   position: relative;
   left: 110px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ea232d), color-stop(50%, #a80d0c), to(#ea232d));
+  background: linear-gradient(to bottom, #ea232d 0, #a80d0c 50%, #ea232d 100%);
   border: solid 1px #cca172;
   border-radius: 3px;
   color: #ffffff;
@@ -3413,8 +3369,8 @@ html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable l
   letter-spacing: 1px;
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li button:hover, html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li button:active, html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#b90b0a), to(#ea232d));
+  background: linear-gradient(to bottom, #b90b0a 0%, #ea232d 100%);
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.right ul {
   width: 100%;
@@ -3450,9 +3406,9 @@ html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable l
           transform: translateY(-50%);
   padding: 0 10px;
   background: none;
-  border: solid 1px #cca172;
+  border: solid 1px #b90b0a;
   border-radius: 3px;
-  color: #cca172;
+  color: #b90b0a;
   letter-spacing: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3532,8 +3488,8 @@ html body .innerPage .center .memberWrap .bottom .dataWrap .changePassword ul li
 html body .innerPage .center .memberWrap .bottom .dataWrap .changePassword ul li button {
   width: 70px;
   height: 32px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ea232d), color-stop(50%, #a80d0c), to(#ea232d));
+  background: linear-gradient(to bottom, #ea232d 0, #a80d0c 50%, #ea232d 100%);
   border: solid 1px #cca172;
   border-radius: 3px;
   color: #ffffff;
@@ -3542,8 +3498,8 @@ html body .innerPage .center .memberWrap .bottom .dataWrap .changePassword ul li
   letter-spacing: 1px;
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .changePassword ul li button:hover, html body .innerPage .center .memberWrap .bottom .dataWrap .changePassword ul li button:active, html body .innerPage .center .memberWrap .bottom .dataWrap .changePassword ul li button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#b90b0a), to(#ea232d));
+  background: linear-gradient(to bottom, #b90b0a 0%, #ea232d 100%);
 }
 html body .innerPage .center .memberWrap .bottom .platformWrap {
   display: none;
@@ -3777,9 +3733,9 @@ html body .innerPage .center .vipWrap .nextBox .nextBar button.check {
   margin: 0 14px 0px 30px;
   padding: 0 10px;
   background: none;
-  border: solid 1px #cca172;
+  border: solid 1px #b90b0a;
   border-radius: 3px;
-  color: #cca172;
+  color: #b90b0a;
   letter-spacing: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3797,8 +3753,8 @@ html body .innerPage .center .vipWrap .nextBox .nextBar button.check:hover, html
   opacity: 0.8;
 }
 html body .innerPage .center .vipWrap .nextBox .nextBar button.levelUp {
-  background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ea232d), color-stop(50%, #a80d0c), to(#ea232d));
+  background: linear-gradient(to bottom, #ea232d 0, #a80d0c 50%, #ea232d 100%);
   border: solid 1px #cca172;
   border-radius: 3px;
   color: #ffffff;
@@ -3807,8 +3763,8 @@ html body .innerPage .center .vipWrap .nextBox .nextBar button.levelUp {
   letter-spacing: 1px;
 }
 html body .innerPage .center .vipWrap .nextBox .nextBar button.levelUp:hover, html body .innerPage .center .vipWrap .nextBox .nextBar button.levelUp:active, html body .innerPage .center .vipWrap .nextBox .nextBar button.levelUp.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#b90b0a), to(#ea232d));
+  background: linear-gradient(to bottom, #b90b0a 0%, #ea232d 100%);
 }
 html body .innerPage .center .vipWrap .levelEnjoy {
   width: 100%;
@@ -3875,9 +3831,9 @@ html body .innerPage .center .vipWrap .levelEnjoy .more {
   margin: 40px auto 44px;
   padding: 0 10px;
   background: none;
-  border: solid 1px #cca172;
+  border: solid 1px #b90b0a;
   border-radius: 3px;
-  color: #cca172;
+  color: #b90b0a;
   letter-spacing: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4474,9 +4430,9 @@ html body .innerPage .center .walletWrap .walletMiddle .bottom .activeWallet .wa
   margin-right: 10px;
   padding: 0 10px;
   background: none;
-  border: solid 1px #cca172;
+  border: solid 1px #b90b0a;
   border-radius: 3px;
-  color: #cca172;
+  color: #b90b0a;
   letter-spacing: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4685,7 +4641,7 @@ html body .innerPage .center .cardWrap .cardMiddle .top .content .cardBox .slide
   margin-top: 25px;
 }
 html body .innerPage .center .cardWrap .cardMiddle .top .content .cardBox .slider .card.register {
-  background: linear-gradient(120deg, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: linear-gradient(120deg, #ea232d 0%, #a80d0c 50%, #ea232d 100%);
   border: solid 1px #ffffff;
   padding: 15px 17px 0;
 }
@@ -4719,7 +4675,7 @@ html body .innerPage .center .cardWrap .cardMiddle .top .content .cardBox .slide
   text-align: center;
   letter-spacing: 1px;
   background: #ffffff;
-  color: #cfa678;
+  color: #b90b0a;
   font-size: 16px;
   border-radius: 0 0 5px 5px;
   margin-top: 4px;
@@ -4845,8 +4801,8 @@ html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .form
   width: 255px;
   height: 42px;
   margin-left: 8px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ea232d), color-stop(50%, #a80d0c), to(#ea232d));
+  background: linear-gradient(to bottom, #ea232d 0, #a80d0c 50%, #ea232d 100%);
   border: solid 1px #cca172;
   border-radius: 3px;
   color: #ffffff;
@@ -4855,8 +4811,8 @@ html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .form
   letter-spacing: 1px;
 }
 html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox form .content .row .inputBox button:hover, html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox form .content .row .inputBox button:active, html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox form .content .row .inputBox button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#b90b0a), to(#ea232d));
+  background: linear-gradient(to bottom, #b90b0a 0%, #ea232d 100%);
 }
 html body .innerPage .center .rightSide {
   width: 245px;
@@ -5797,8 +5753,8 @@ html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .s
 html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .search form .checkBtn button {
   width: 152px;
   height: 41px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ea232d), color-stop(50%, #a80d0c), to(#ea232d));
+  background: linear-gradient(to bottom, #ea232d 0, #a80d0c 50%, #ea232d 100%);
   border: solid 1px #cca172;
   border-radius: 3px;
   color: #ffffff;
@@ -5807,8 +5763,8 @@ html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .s
   letter-spacing: 1px;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .search form .checkBtn button:hover, html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .search form .checkBtn button:active, html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .search form .checkBtn button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#b90b0a), to(#ea232d));
+  background: linear-gradient(to bottom, #b90b0a 0%, #ea232d 100%);
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .tableWrap {
   width: 100%;
@@ -6062,8 +6018,8 @@ html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form .checkBtn button {
   width: 152px;
   height: 41px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ea232d), color-stop(50%, #a80d0c), to(#ea232d));
+  background: linear-gradient(to bottom, #ea232d 0, #a80d0c 50%, #ea232d 100%);
   border: solid 1px #cca172;
   border-radius: 3px;
   color: #ffffff;
@@ -6072,8 +6028,8 @@ html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form
   letter-spacing: 1px;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form .checkBtn button:hover, html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form .checkBtn button:active, html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form .checkBtn button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#b90b0a), to(#ea232d));
+  background: linear-gradient(to bottom, #b90b0a 0%, #ea232d 100%);
 }
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .fakeTable {
   width: 100%;
@@ -6271,8 +6227,8 @@ html body .innerPage .center .betWrap form .timeGroup .timeBox .btnBox button:la
 html body .innerPage .center .betWrap form .timeGroup .checkBtn {
   width: 152px;
   height: 43px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ea232d), color-stop(50%, #a80d0c), to(#ea232d));
+  background: linear-gradient(to bottom, #ea232d 0, #a80d0c 50%, #ea232d 100%);
   border: solid 1px #cca172;
   border-radius: 3px;
   color: #ffffff;
@@ -6281,8 +6237,8 @@ html body .innerPage .center .betWrap form .timeGroup .checkBtn {
   letter-spacing: 1px;
 }
 html body .innerPage .center .betWrap form .timeGroup .checkBtn:hover, html body .innerPage .center .betWrap form .timeGroup .checkBtn:active, html body .innerPage .center .betWrap form .timeGroup .checkBtn.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#b90b0a), to(#ea232d));
+  background: linear-gradient(to bottom, #b90b0a 0%, #ea232d 100%);
 }
 html body .innerPage .center .betWrap .fakeTable {
   width: 100%;
@@ -6489,9 +6445,9 @@ html body .innerPage .center .depositWrap .depositMiddle .top .title button {
   height: 31px;
   padding: 0 10px;
   background: none;
-  border: solid 1px #cca172;
+  border: solid 1px #b90b0a;
   border-radius: 3px;
-  color: #cca172;
+  color: #b90b0a;
   letter-spacing: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6673,8 +6629,8 @@ html body .innerPage .center .depositWrap .depositMiddle .bottom .content form b
   width: 257px;
   height: 41px;
   margin: 46px 0 0 108px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ea232d), color-stop(50%, #a80d0c), to(#ea232d));
+  background: linear-gradient(to bottom, #ea232d 0, #a80d0c 50%, #ea232d 100%);
   border: solid 1px #cca172;
   border-radius: 3px;
   color: #ffffff;
@@ -6683,8 +6639,8 @@ html body .innerPage .center .depositWrap .depositMiddle .bottom .content form b
   letter-spacing: 1px;
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom .content form button:hover, html body .innerPage .center .depositWrap .depositMiddle .bottom .content form button:active, html body .innerPage .center .depositWrap .depositMiddle .bottom .content form button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#b90b0a), to(#ea232d));
+  background: linear-gradient(to bottom, #b90b0a 0%, #ea232d 100%);
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom .content .remindBox {
   width: 839px;
@@ -6702,7 +6658,7 @@ html body .innerPage .center .depositWrap .depositMiddle .bottom .content .remin
   margin-bottom: 11px;
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom .content .remindBox div.title {
-  color: #cfa678;
+  color: #b90b0a;
 }
 html body .innerPage .center .transferWrap {
   display: -webkit-box;
@@ -6789,8 +6745,8 @@ html body .innerPage .center .transferWrap .transferMiddle .wallet .centerWallet
 html body .innerPage .center .transferWrap .transferMiddle .wallet .centerWallet .walletTitle button {
   width: 71px;
   height: 23px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ea232d), color-stop(50%, #a80d0c), to(#ea232d));
+  background: linear-gradient(to bottom, #ea232d 0, #a80d0c 50%, #ea232d 100%);
   border: solid 1px #cca172;
   border-radius: 3px;
   color: #ffffff;
@@ -6799,8 +6755,8 @@ html body .innerPage .center .transferWrap .transferMiddle .wallet .centerWallet
   letter-spacing: 1px;
 }
 html body .innerPage .center .transferWrap .transferMiddle .wallet .centerWallet .walletTitle button:hover, html body .innerPage .center .transferWrap .transferMiddle .wallet .centerWallet .walletTitle button:active, html body .innerPage .center .transferWrap .transferMiddle .wallet .centerWallet .walletTitle button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#b90b0a), to(#ea232d));
+  background: linear-gradient(to bottom, #b90b0a 0%, #ea232d 100%);
 }
 html body .innerPage .center .transferWrap .transferMiddle .wallet .centerWallet .amount {
   width: 100%;
@@ -7000,8 +6956,8 @@ html body .innerPage .center .transferWrap .transferMiddle form button {
   width: 255px;
   height: 42px;
   margin: 20px 0 0 65px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ea232d), color-stop(50%, #a80d0c), to(#ea232d));
+  background: linear-gradient(to bottom, #ea232d 0, #a80d0c 50%, #ea232d 100%);
   border: solid 1px #cca172;
   border-radius: 3px;
   color: #ffffff;
@@ -7010,8 +6966,8 @@ html body .innerPage .center .transferWrap .transferMiddle form button {
   letter-spacing: 1px;
 }
 html body .innerPage .center .transferWrap .transferMiddle form button:hover, html body .innerPage .center .transferWrap .transferMiddle form button:active, html body .innerPage .center .transferWrap .transferMiddle form button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#b90b0a), to(#ea232d));
+  background: linear-gradient(to bottom, #b90b0a 0%, #ea232d 100%);
 }
 html body .innerPage .center .transferWrap .transferMiddle .activeAccount {
   width: 100%;
@@ -7391,8 +7347,8 @@ html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom form butt
   width: 257px;
   height: 40px;
   margin-left: 100px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ea232d), color-stop(50%, #a80d0c), to(#ea232d));
+  background: linear-gradient(to bottom, #ea232d 0, #a80d0c 50%, #ea232d 100%);
   border: solid 1px #cca172;
   border-radius: 3px;
   color: #ffffff;
@@ -7401,8 +7357,8 @@ html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom form butt
   letter-spacing: 1px;
 }
 html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom form button:hover, html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom form button:active, html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom form button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#b90b0a), to(#ea232d));
+  background: linear-gradient(to bottom, #b90b0a 0%, #ea232d 100%);
 }
 html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom .remindBox {
   width: 839px;
@@ -7415,7 +7371,7 @@ html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom .remindBo
 html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom .remindBox .remindTitle {
   font-size: 13px;
   letter-spacing: 1px;
-  color: #cfa678;
+  color: #b90b0a;
   font-weight: bold;
 }
 html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom .remindBox div {
@@ -7792,9 +7748,9 @@ html body .registerWrap .bigBox .right label button {
   right: 11px;
   padding: 0 10px;
   background: none;
-  border: solid 1px #cca172;
+  border: solid 1px #b90b0a;
   border-radius: 3px;
-  color: #cca172;
+  color: #b90b0a;
   letter-spacing: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7843,13 +7799,13 @@ html body .registerWrap .bigBox .right .checkBox p {
   color: #000000;
 }
 html body .registerWrap .bigBox .right .checkBox p span {
-  color: #cfa678;
+  color: #b90b0a;
 }
 html body .registerWrap .bigBox .right .checkBtn {
   width: 332px;
   height: 41px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ea232d), color-stop(50%, #a80d0c), to(#ea232d));
+  background: linear-gradient(to bottom, #ea232d 0, #a80d0c 50%, #ea232d 100%);
   border: solid 1px #cca172;
   border-radius: 3px;
   color: #ffffff;
@@ -7858,6 +7814,6 @@ html body .registerWrap .bigBox .right .checkBtn {
   letter-spacing: 1px;
 }
 html body .registerWrap .bigBox .right .checkBtn:hover, html body .registerWrap .bigBox .right .checkBtn:active, html body .registerWrap .bigBox .right .checkBtn.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#b90b0a), to(#ea232d));
+  background: linear-gradient(to bottom, #b90b0a 0%, #ea232d 100%);
 }
