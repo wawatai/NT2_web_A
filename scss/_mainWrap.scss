@@ -78,6 +78,8 @@
             justify-content: center;
             font-weight: bold;
             color: $fontColor_2;
+            font-size: 20px;
+            font-weight: bold;
             cursor: pointer;
             position: relative;
 
@@ -236,14 +238,14 @@
 
                     .title {
                         color: $fontColor_15;
-                        font-size: 22px;
+                        font-size: 1.5rem;
                         font-weight: bold;
                         margin-bottom: 10px;
                     }
 
                     p:not(.title) {
                         color: $fontColor_2;
-                        font-size: 14px;
+                        font-size: 1rem;
                         margin-bottom: 10px;
                     }
                 }

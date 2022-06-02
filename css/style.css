@@ -773,6 +773,7 @@ html body header .top {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 html body header .top .langBox {
   width: auto;
@@ -803,10 +804,12 @@ html body header .top .langBox select option {
 html body header .top .brad {
   width: auto;
   height: auto;
+  position: absolute;
+  left: 135px;
 }
 html body header .top .brad span {
   color: #ffffff;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
 }
 html body header .top .user {
@@ -1094,6 +1097,9 @@ html body header .gameNav .center ul li {
   font-weight: bold;
   cursor: pointer;
   color: #ffffff;
+}
+html body header .gameNav .center ul li:hover, html body header .gameNav .center ul li:active, html body header .gameNav .center ul li.active {
+  color: #ffff00;
 }
 html body header .marqueeArea {
   width: 100%;
@@ -1457,6 +1463,8 @@ html body .mainWrap .downBar li {
           justify-content: center;
   font-weight: bold;
   color: #000000;
+  font-size: 20px;
+  font-weight: bold;
   cursor: pointer;
   position: relative;
 }
@@ -1594,13 +1602,13 @@ html body .mainWrap .downBox ul li .textBox {
 }
 html body .mainWrap .downBox ul li .textBox .title {
   color: #d31a1a;
-  font-size: 22px;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 html body .mainWrap .downBox ul li .textBox p:not(.title) {
   color: #000000;
-  font-size: 14px;
+  font-size: 1rem;
   margin-bottom: 10px;
 }
 html body footer {
@@ -1669,7 +1677,7 @@ html body footer .top .center .partnerBox .partners i {
 html body footer .footerList {
   width: 100%;
   height: auto;
-  background: #e11515;
+  background: #333333;
 }
 html body footer .footerList .center {
   width: 1000px;
@@ -1687,9 +1695,24 @@ html body footer .footerList .center {
 }
 html body footer .footerList .center a {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   text-decoration: none;
+}
+html body footer .footerList .center a:hover, html body footer .footerList .center a:active, html body footer .footerList .center a.active {
+  color: #ffff00;
+}
+html body footer .footerList .bottomText {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-bottom: 20px;
+}
+html body footer .footerList .bottomText p {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 html body .filter {
   display: none;

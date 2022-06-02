@@ -12,6 +12,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: relative;
         
         //左
         .langBox {
@@ -33,10 +34,12 @@ header {
         .brad {
             width: auto;
             height: auto;
+            position: absolute;
+            left: 135px;
 
             span {
                 color: $fontColor_1;
-                font-size: 18px;
+                font-size: 15px;
                 font-weight: bold;
             }
         }
@@ -316,6 +319,10 @@ header {
                     font-weight: bold;
                     cursor: pointer;
                     color: $fontColor_1;
+
+                    &:hover,&:active,&.active {
+                        color: $fontColor_6;
+                    }
                 }
             }
         }
