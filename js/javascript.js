@@ -8,7 +8,51 @@ function currentTime() {
     m = now.getMinutes();
     s = now.getSeconds();
     var curTime = document.getElementsByClassName('time');
-    curTime[0].innerHTML = yy+'年 '+mm+'月 '+dd+'日 '+h+':'+m+':'+ s;
+
+    var zeroMM,zeroD,zeroH,zeroM,zeroS = "";
+
+    if(mm < 10)
+    {
+        zeroMM = "0";
+    }
+    else
+    {
+        zeroMM = "";
+    }
+    if(dd < 10)
+    {
+        zeroD = "0";
+    }
+    else
+    {
+        zeroD = "";
+    }
+    if(h < 10)
+    {
+        zeroH = "0";
+    }
+    else
+    {
+        zeroH = "";
+    }
+    if(m < 10)
+    {
+        zeroM = "0";
+    }
+    else
+    {
+        zeroM = "";
+    }
+    if(s < 10)
+    {
+        zeroS = "0";
+    }
+    else
+    {
+        zeroS = "";
+    }
+
+    curTime[0].innerHTML = yy + '-' + zeroMM + mm + '-' + zeroD + + dd + ' ' + zeroH + h + ':' + zeroM + m + ':' + zeroS + s;
     setTimeout('currentTime()',1000);
 }
 
