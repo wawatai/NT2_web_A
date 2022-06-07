@@ -91,37 +91,37 @@
                     margin: 0;
                 }
 
-                ul {
-                    width: 100%;
-                    height: auto;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    padding: 20px;
-                    box-sizing: border-box;
+                // ul {
+                //     width: 100%;
+                //     height: auto;
+                //     display: flex;
+                //     align-items: center;
+                //     justify-content: space-between;
+                //     padding: 20px;
+                //     box-sizing: border-box;
 
-                    .title {
-                        width: auto;
-                        max-width: 50%;
-                        font-size: 22px;
-                        font-weight: bold;
-                        letter-spacing: 3px;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                    }
+                //     .title {
+                //         width: auto;
+                //         max-width: 50%;
+                //         font-size: 22px;
+                //         font-weight: bold;
+                //         letter-spacing: 3px;
+                //         overflow: hidden;
+                //         text-overflow: ellipsis;
+                //         white-space: nowrap;
+                //     }
 
-                    .btnBox {
-                        width: auto;
-                        height: auto;
+                //     .btnBox {
+                //         width: auto;
+                //         height: auto;
 
-                        button {
-                            width: 117px;
-                            height: 37px;
-                            @include buttonStyle_5;
-                        }
-                    }
-                }
+                //         button {
+                //             width: 117px;
+                //             height: 37px;
+                //             @include buttonStyle_5;
+                //         }
+                //     }
+                // }
             }
         }
 

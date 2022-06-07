@@ -2881,50 +2881,6 @@ html body .eventWrap .eventBody .eventList .eventBox {
 html body .eventWrap .eventBody .eventList .eventBox:last-child {
   margin: 0;
 }
-html body .eventWrap .eventBody .eventList .eventBox ul {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-html body .eventWrap .eventBody .eventList .eventBox ul .title {
-  width: auto;
-  max-width: 50%;
-  font-size: 22px;
-  font-weight: bold;
-  letter-spacing: 3px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-html body .eventWrap .eventBody .eventList .eventBox ul .btnBox {
-  width: auto;
-  height: auto;
-}
-html body .eventWrap .eventBody .eventList .eventBox ul .btnBox button {
-  width: 117px;
-  height: 37px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9ddbec), color-stop(50%, #0282cc), to(#82aeeb));
-  background: linear-gradient(to bottom, #9ddbec 0%, #0282cc 50%, #82aeeb 100%);
-  border: solid 1px #0282cc;
-  border-radius: 3px;
-  color: #ffffff;
-  font-size: 14px;
-}
-html body .eventWrap .eventBody .eventList .eventBox ul .btnBox button:hover, html body .eventWrap .eventBody .eventList .eventBox ul .btnBox button:active, html body .eventWrap .eventBody .eventList .eventBox ul .btnBox button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#9ddbec), color-stop(50%, #0282cc), to(#82aeeb));
-  background: linear-gradient(to top, #9ddbec 0%, #0282cc 50%, #82aeeb 100%);
-}
 html body .eventWrap .eventBody .eventDetail {
   display: none;
   width: 1028px;
