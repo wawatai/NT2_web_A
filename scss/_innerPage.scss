@@ -913,39 +913,75 @@
             }
 
             .fakeTable {
-                width: 100%;
+                width: 96%;
                 height: auto;
-                box-sizing: border-box;
-                margin-top: 10px;
-                padding: 0 18px;
+                margin: 10px auto 0;
+
+                &.fourWrap {
+                    
+                    td {
+                        width: 25%;
+                    }
+                }
+                &.sixWrap {
+
+                    td {
+                        width: 16.7%;
+                    }
+                }
+                &.sevenWrap {
+
+                    td {
+                        width: 14.3%;
+                    }
+                }
                 
-                li {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    height: 50px;
+                tr {
                     border-bottom: solid 1px $borderColor_2;
 
-                    &.header {
+                    &:first-child {
                         border-bottom: solid 2px $borderColor_8;
                     }
 
-                    div {
-                        width: 120px;
-                        text-align: center;
-                        font-size: 13px;
-                        letter-spacing: 1px;
-                        color: $fontColor_2;
-                        border-right: solid 1px $borderColor_2;
-                        box-sizing: border-box;
-                        font-weight: bold;
+                    th {
+                        height: 52px;
+                        vertical-align: middle;
 
                         &:last-child {
-                            border: none;
+
+                            p {
+                                border: none;
+                            }
                         }
 
-                        &:nth-of-type(1) {
-                            width: 190px;
+                        p {
+                            color: $fontColor_2;
+                            font-size: 16px;
+                            font-weight: bold;
+                        }
+                    }
+
+                    td {
+                        height: 52px;
+                        vertical-align: middle;
+
+                        &:last-child {
+
+                            p {
+                                border: none;
+                            }
+                        }
+
+                        p {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 30px;
+                            color: $fontColor_11;
+                            font-size: 14px;
+                            font-weight: bold;
+                            border-right: solid 1px $borderColor_2;
                         }
                     }
                 }
