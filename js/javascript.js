@@ -157,7 +157,7 @@ $(function(){
         n ++;
         vipCard.style.transform = "translateX(" + (-290 * n) + "px)";
 
-        if(n == 3){
+        if(n == 4){
             n --;
         }
     })

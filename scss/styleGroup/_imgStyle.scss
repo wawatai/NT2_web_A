@@ -297,6 +297,10 @@ footer .top button::before {
     background: url('../images/icon/svg/innerNav_mail.svg') no-repeat;
     background-size: 100%;
 }
+.innerNav .fixing_ic {
+    background: url('../images/icon/svg/fixing.svg') no-repeat;
+    background-size: contain;
+}
 
 //.memberWrap .level i
 .memberWrap .level .data_ic {
@@ -319,7 +323,7 @@ footer .top button::before {
 //.vipWrap .medal
 .vipHeader .medal {
     background: url('../images/icon/medal.png') no-repeat;
-    background-size: 100%;
+    background-size: contain;
 }
 //.vipWrap .detailTitle .back
 .vipWrap .detailTitle .back {
@@ -336,14 +340,34 @@ footer .top button::before {
     background: url('../images/icon/vip_card.png') no-repeat;
     background-size: 100%;
 }
-.vipWrap .detailCardBox .cardBg.active {
-    background: url('../images/icon/vip_card_red.png') no-repeat;
-    background-size: 100%;
-}
 //.vipWrap .detailCardBox .medal
 .vipWrap .detailCardBox .medal {
     background: url('../images/icon/medal.png') no-repeat;
-    background-size: 100%;
+    background-size: contain;
+}
+.vipWrap .detailCardBox .medal.v2 {
+    background: url('../images/icon/medal_2.png') no-repeat;
+    background-size: contain;
+}
+.vipWrap .detailCardBox .medal.v3 {
+    background: url('../images/icon/medal_3.png') no-repeat;
+    background-size: contain;
+}
+.vipWrap .detailCardBox .medal.v4 {
+    background: url('../images/icon/medal_4.png') no-repeat;
+    background-size: contain;
+}
+.vipWrap .detailCardBox .medal.v5 {
+    background: url('../images/icon/medal_5.png') no-repeat;
+    background-size: contain;
+}
+.vipWrap .detailCardBox .medal.v6 {
+    background: url('../images/icon/medal_6.png') no-repeat;
+    background-size: contain;
+}
+.vipWrap .detailCardBox .medal.v7 {
+    background: url('../images/icon/medal_7.png') no-repeat;
+    background-size: contain;
 }
 
 //walletMiddle .totalTitle .icon

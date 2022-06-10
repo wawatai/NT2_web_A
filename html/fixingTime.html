@@ -445,7 +445,7 @@
                             <i class="wallet_ic"></i>
                             我的錢包
                         </li>
-                        <li class="active" onclick="window.location.href='./bankCard.html'">
+                        <li onclick="window.location.href='./bankCard.html'">
                             <i class="card_ic"></i>
                             綁定銀行卡
                         </li>
@@ -465,150 +465,85 @@
                             <i class="mail_ic"></i>
                             站內信
                         </li>
-                        <li onclick="window.location.href='./fixingTime.html'">
+                        <li class="active" onclick="window.location.href='./fixingTime.html'">
                             <i class="fixing_ic"></i>
                             維護時間
                         </li>
                     </ul>
                 </aside>
                 <section>
-                    <div class="cardWrap">
-                        <div class="cardMiddle">
-                            <div class="top">
-                                <div class="header">
-                                    <span>綁定銀行卡</span>
-                                </div>
-                                <div class="content">
-                                    <div class="title">
-                                        <span>卡片管理</span>
-                                        <span>卡片數量 3 <span>/ 5</span></span>
-                                    </div>
-                                    <div class="cardBox">
-                                        <div class="slider">
-                                            <div class="card empty">
-                                                <div class="addCard_ic"></div>
-                                                <div class="text">請先綁定一張銀行卡，用於收款</div>
-                                            </div>
-                                            <div class="card register">
-                                                <div class="name">上海銀行</div>
-                                                <div class="branch">上海</div>
-                                                <div class="account">
-                                                    <span>0234568790</span>
-                                                </div>
-                                                <p class="review">審核中</p>
-                                            </div>
-                                            <div class="card register">
-                                                <div class="name">上海銀行</div>
-                                                <div class="branch">上海</div>
-                                                <div class="account">
-                                                    <span>0234568790</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bottomWrap">
-                                <div class="bottom">
-                                    <div>
-                                        <div class="title">添加銀行卡</div>
-                                        <div class="formBox">
-                                            <form>
-                                                <div class="content">
-                                                    <div class="row">
-                                                        <div class="smallTitle">
-                                                            <span>銀行名稱</span>
-                                                        </div>
-                                                        <div class="inputBox">
-                                                            <input type="text">
-                                                            <p class="err">銀行名稱為必填</p>
-                                                            <small>輸入一個相關字，產生銀行選單</small>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="smallTitle">
-                                                            <span>分行名稱</span>
-                                                        </div>
-                                                        <div class="inputBox">
-                                                            <input type="text">
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="smallTitle">
-                                                            <span>開戶姓名</span>
-                                                        </div>
-                                                        <div class="inputBox">
-                                                            <input type="text" value="美術一" readonly>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="smallTitle">
-                                                            <span>銀行帳號</span>
-                                                        </div>
-                                                        <div class="inputBox">
-                                                            <input type="text">
-                                                            <p class="err">帳號為必填</p>
-                                                            <small>請認真校對銀行帳號，帳號錯誤資金將無法到賬!</small>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="smallTitle">
-                                                            <span>確認帳號</span>
-                                                        </div>
-                                                        <div class="inputBox">
-                                                            <input type="text">
-                                                            <small>請認真校對銀行帳號，帳號錯誤資金將無法到賬!</small>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="smallTitle"></div>
-                                                        <div class="inputBox">
-                                                            <button>確認</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="fixingWrap">
+                        <div class="top">各遊戲例行性維護時間</div>
+                        <div class="bottom">
+                            <table>
+                                <tr>
+                                    <th>
+                                        <p>平台</p>
+                                    </th>
+                                    <th>
+                                        <p>週期</p>
+                                    </th>
+                                    <th>
+                                        <p>時間</p>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>歐博真人</p>
+                                    </td>
+                                    <td>
+                                        <p>週一</p>
+                                    </td>
+                                    <td>
+                                        <p>上午 8:00 ~ 中午 12:00</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>WM真人</p>
+                                    </td>
+                                    <td>
+                                        <p>週一</p>
+                                    </td>
+                                    <td>
+                                        <p>中午 12:00 ~ 下午 14:30</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>體育</p>
+                                    </td>
+                                    <td>
+                                        <p>週一</p>
+                                    </td>
+                                    <td>
+                                        <p>下午 13:00 ~ 下午 16:00</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>沙龍真人</p>
+                                    </td>
+                                    <td>
+                                        <p>週一(兩週一次)</p>
+                                    </td>
+                                    <td>
+                                        <p>上午 9:00 ~ 中午 12:30</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>彩票</p>
+                                    </td>
+                                    <td>
+                                        <p>每月第一個週三</p>
+                                    </td>
+                                    <td>
+                                        <p>上午 9:00 ~ 中午 12:00</p>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
-                        <aside class="rightSide">
-                            <div class="smallBoard">
-                                <div class="title">
-                                    投注紀錄
-                                    <p class="more">
-                                        更多
-                                        <i class="arrow"></i>
-                                    </p>
-                                </div>
-                                <ul class="list">
-                                    <li class="smallList">
-                                        <p class="smallTitle">BNG娛樂</p>
-                                        <ul>
-                                            <li>
-                                                <p>投注</p>
-                                                <p>$ 24</p>
-                                            </li>
-                                            <li>
-                                                <p>輸贏</p>
-                                                <p>$ -17</p>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="smallBoard">
-                                <div class="title">
-                                    活動錢包
-                                    <p class="more">
-                                        更多
-                                        <i class="arrow"></i>
-                                    </p>
-                                </div>
-                                <ul class="list"></ul>
-                            </div>
-                        </aside>
                     </div>
                 </section>
             </div>
@@ -671,7 +606,7 @@
             </div>
         </div>
     </footer>
-    <div class="filter display">
+    <div class="filter">
         <div class="jumpWindow news">
             <div class="title">
                 <p>最新公告</p>
@@ -837,18 +772,6 @@
             </form>
             <div class="enterGame">
                 <button>進入遊戲</button>
-            </div>
-        </div>
-        <div class="jumpWindow plsGo display">
-            <div class="title">
-                <p>提示</p>
-                <i class="close_ic"></i>
-            </div>
-            <div class="content">
-                <div>請至個人資料頁面綁定資料</div>
-            </div>
-            <div class="btnBox">
-                <button>同意</button>
             </div>
         </div>
     </div>
