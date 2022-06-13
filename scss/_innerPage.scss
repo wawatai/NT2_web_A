@@ -842,8 +842,8 @@
                                 // }
 
                                 .medal {
-                                    width: 76px;
-                                    height: 110px;
+                                    width: 66px;
+                                    height: 96px;
                                     // display: flex;
                                     // align-items: flex-end;
                                     // justify-content: center;
@@ -884,7 +884,8 @@
 
                                             &.text {
                                                 font-size: 12px;
-                                                margin-bottom: 8px;
+                                                margin-bottom: 3px;
+                                                line-height: 15px;
                                                 color: $fontColor_1;
                                             }
 

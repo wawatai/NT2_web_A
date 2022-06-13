@@ -3925,8 +3925,8 @@ html body .innerPage .center .vipWrap .detailCardBox .wrap ul li .cardBg {
   padding: 0 24px;
 }
 html body .innerPage .center .vipWrap .detailCardBox .wrap ul li .cardBg .medal {
-  width: 76px;
-  height: 110px;
+  width: 66px;
+  height: 96px;
 }
 html body .innerPage .center .vipWrap .detailCardBox .wrap ul li .cardBg .content {
   width: 100%;
@@ -3950,7 +3950,8 @@ html body .innerPage .center .vipWrap .detailCardBox .wrap ul li .cardBg .conten
 }
 html body .innerPage .center .vipWrap .detailCardBox .wrap ul li .cardBg .content div p.text {
   font-size: 12px;
-  margin-bottom: 8px;
+  margin-bottom: 3px;
+  line-height: 15px;
   color: #ffffff;
 }
 html body .innerPage .center .vipWrap .detailCardBox .wrap ul li .cardBg .content div p.num {
