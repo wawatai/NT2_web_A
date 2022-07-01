@@ -204,13 +204,12 @@
                 <img class="logo" src="../images/icon/svg/logo.svg">
                 <ul>
                     <li class="menu" onclick="window.location.href='../index.html'">首頁</li>
-                    <li class="sportBtn" onclick="window.location.href='./sportPage.html'">體育賽事</li>
                     <li class="liveBtn" onclick="window.location.href='./livePage.html'">真人娛樂</li>
                     <li class="slotBtn" onclick="window.location.href='./slotPage.html'">老虎機</li>
-                    <li class="lotteryBtn" onclick="window.location.href='./lotteryPage.html'">彩票</li>
                     <li class="fishBtn" onclick="window.location.href='./fishPage.html'">捕魚機</li>
+                    <li class="sportBtn" onclick="window.location.href='./sportPage.html'">體育賽事</li>
                     <li class="boardBtn" onclick="window.location.href='./boardPage.html'">棋牌遊戲</li>
-                    <!-- <li class="activeWallet">活動錢包</li> -->
+                    <li class="lotteryBtn" onclick="window.location.href='./lotteryPage.html'">彩票</li>
                     <li class="event" onclick="window.location.href='./event.html'">優惠</li>
                     <li class="vip" onclick="window.location.href='./vip.html'">VIP會員</li>
                 </ul>
@@ -486,13 +485,21 @@
                                     <i class="prev"></i>
                                     <div class="box">
                                         <ul>
-                                            <li class="shopBtn active">
+                                            <li class="cardBtn active">
                                                 <i class="card_ic"></i>
+                                                銀行卡儲值
+                                            </li>
+                                            <li class="shopBtn">
+                                                <i class="shop_ic"></i>
                                                 超商儲值
                                             </li>
+                                            <li class="shopBtn">
+                                                <i class="usdt_ic"></i>
+                                                USDT
+                                            </li>
                                             <li class="atmBtn">
-                                                <i class="shop_ic"></i>
-                                                網路ATM
+                                                <i class="atm_ic"></i>
+                                                ATM
                                             </li>
                                         </ul>
                                     </div>
@@ -500,7 +507,35 @@
                                 </div>
                             </div>
                             <div class="bottom">
-                                <div class="shop display">
+                                <div class="depContent card display">
+                                    <p class="title">銀行卡轉帳</p>
+                                    <div class="content">
+                                        <form>
+                                            <div class="row">
+                                                <i>※</i>
+                                                選擇銀行
+                                                <select>
+                                                    <option>上海銀行</option>
+                                                </select>
+                                                <p class="remind">尾號:</p>
+                                            </div>
+                                            <div class="row">
+                                                <i>※</i>
+                                                存款金額
+                                                <input type="text" placeholder="請輸入存款金額">
+                                                <p class="remind sp">注意：【請勿重覆儲值】每筆訂單編號只能儲值一次。再次存款請重新填寫金額並送出申請。</p>
+                                            </div>
+                                            <button type="button">立即存款</button>
+                                        </form>
+                                        <div class="remindBox">
+                                            <div class="title">重要提醒</div>
+                                            <div>1. 僅接受<span class="remind">綁定銀行卡</span>轉入之款項，若使用非綁定銀行卡進行轉帳，款項將退回原帳戶。</div>
+                                            <div>2. 本公司銀行帳號不定期變動，存款前請務必依照指定的銀行帳號進行存款，若將款項匯款至非系統提供之銀行帳號，恕不負責。</div>
+                                            <div>3. 存款金額需與申請提交金額相同，如不相同會以實際入帳金額為主。</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="depContent shop">
                                     <p class="title">超商儲值</p>
                                     <div class="content">
                                         <form>
@@ -519,20 +554,44 @@
                                             <div class="row">
                                                 <i>※</i>
                                                 存款金額
-                                                <input type="text" placeholder="請輸入充值金額">
-                                                <p class="remind">單筆存款金額1,000~20,000</p>
+                                                <input type="text" placeholder="請輸入存款金額">
+                                                <p class="remind sp">注意：【請勿重覆儲值】每筆訂單編號只能儲值一次。再次存款請重新填寫金額並送出申請。</p>
                                             </div>
                                             <button type="button" class="check">立即存款</button>
                                         </form>
                                         <div class="remindBox">
                                             <div class="title">重要提醒</div>
-                                            <div>1.系統將發配一組專屬交易單號，請至您選擇的超商門市進行繳費。</div>
-                                            <div>2.繳費完成後請妥善保管交易收據，以便查證。</div>
-                                            <div>3.為了加快上分速度，請至交易紀錄上傳交易成功的明細。</div>
+                                            <div>1. 超商代碼訂單開立後再請於存款期限內進行存款，逾期訂單將失效。</div>
+                                            <div>2. <span class="remind">繳費完成後請妥善保留交易收據，以便查證。</span></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="atm">
+                                <div class="depContent usdt">
+                                    <p class="title">USDT</p>
+                                    <div class="content">
+                                        <form>
+                                            <div class="row">
+                                                <i>※</i>
+                                                選擇通道
+                                                <select>
+                                                    <option>TRC-20</option>
+                                                </select>
+                                            </div>
+                                            <div class="row">
+                                                <i>※</i>
+                                                存款金額
+                                                <input type="text" placeholder="請輸入存款金額">
+                                                <p class="remind sp">注意：【請勿重覆儲值】每筆訂單編號只能儲值一次。再次存款請重新填寫金額並送出申請。</p>
+                                            </div>
+                                            <button type="button">立即存款</button>
+                                        </form>
+                                        <div class="remindBox">
+                                            <div class="title">重要提醒</div>
+                                            <div>1. 僅接受USDT-TRC20儲值方式。請確認您的錢包類型，避免USDT遺失。</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="depContent atm">
                                     <p class="title">ATM轉帳</p>
                                     <div class="content">
                                         <form>
@@ -551,16 +610,16 @@
                                             <div class="row">
                                                 <i>※</i>
                                                 存款金額
-                                                <input type="text" placeholder="請輸入充值金額">
-                                                <p class="remind">單筆存款金額1,000~100,000</p>
+                                                <input type="text" placeholder="請輸入存款金額">
+                                                <p class="remind sp">注意：【請勿重覆儲值】每筆訂單編號只能儲值一次。再次存款請重新填寫金額並送出申請。</p>
                                             </div>
                                             <button type="button">立即存款</button>
                                         </form>
                                         <div class="remindBox">
                                             <div class="title">重要提醒</div>
-                                            <div>1.系統將發配一組專屬交易單號，請至您選擇的超商門市進行繳費。</div>
-                                            <div>2.繳費完成後請妥善保管交易收據，以便查證。</div>
-                                            <div>3.為了加快上分速度，請至交易紀錄上傳交易成功的明細。</div>
+                                            <div>1. ATM轉帳須按照提交金額繳款，如未依規定繳交錯誤金額，將造成系統判斷錯誤導致無法自動派發點數。</div>
+                                            <div>2. 完成繳款後請保留【繳款單據】，存款金額將於10~30分內到帳，若訂單異常或尚未到帳，請聯繫線上客服。</div>
+                                            <div>3. 使用ATM櫃員機【轉帳】每日上限3萬元。使用【繳費功能】則無上限3萬元限制，適用繳費ATM：玉山銀行、臺灣銀行、中國信託、土地銀行、富邦銀行、第一銀行、華南銀行、台新銀行、彰化銀行。</div>
                                         </div>
                                     </div>
                                 </div>

@@ -454,6 +454,12 @@ header {
                             display: flex;
                             justify-content: center;
                             flex-direction: column;
+                            transition: 0.3s all;
+                            position: relative;
+
+                            &:hover,&:active,&.active {
+                                transform: scale(1.1);
+                            }
 
                             p {
                                 font-size: 16px;
@@ -461,6 +467,60 @@ header {
                                 padding-top: 4px;
                                 text-align: center;
                                 color: $fontColor_2;
+                            }
+
+                            .fixBox {
+                                width: 90%;
+                                height: 90%;
+                                position: absolute;
+                                top: 5%;
+                                left: 0;
+                                display: none;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                background: $backgroundColor_14;
+                                border-radius: 16px;
+
+                                &.display {
+                                    display: flex;
+                                }
+
+                                .title {
+                                    color: $fontColor_1;
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    margin-bottom: 15px;
+                                }
+                
+                                .timeBox {
+                                    width: 100%;
+                                    height: auto;
+                                    box-sizing: border-box;
+                                    padding: 0 16px;
+                                    display: flex;
+                                    justify-content: space-between;
+                
+                                    div {
+                                        display: block;
+                                        width: auto;
+                                        height: auto;
+                
+                                        span {
+                                            display: block;
+                                            color: $fontColor_1;
+                                            font-size: 14px;
+                                            font-weight: bold;
+                                            margin-bottom: 10px;
+                                        }
+                
+                                        p {
+                                            color: $fontColor_1;
+                                            font-size: 18px;
+                                            font-weight: bold;
+                                        }
+                                    }
+                                }
                             }
                         }
                     }

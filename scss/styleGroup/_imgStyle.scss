@@ -414,6 +414,14 @@ footer .top button::before {
     background: url('../images/icon/svg/card.svg') no-repeat;
     background-size: 100%;
 }
+.depositWrap .list .usdt_ic {
+    background: url('../images/icon/svg/usdt.svg') no-repeat;
+    background-size: contain;
+}
+.depositWrap .list .atm_ic {
+    background: url('../images/icon/svg/atm.svg') no-repeat;
+    background-size: contain;
+}
 .depositWrap .list .shop_ic {
     background: url('../images/icon/svg/shop.svg') no-repeat;
     background-size: 100%;
@@ -482,10 +490,10 @@ footer .top button::before {
     background-size: 100%;
 }
 //helpPage .img
-.helpPage .img.online01 {
-    background: url('../images/help/online01.png') no-repeat;
-    background-size: 100%;
-}
+// .helpPage .img.online01 {
+//     background: url('../images/help/online01.png') no-repeat;
+//     background-size: 100%;
+// }
 .helpPage .img.online02 {
     background: url('../images/help/online02.png') no-repeat;
     background-size: 100%;
@@ -501,6 +509,25 @@ footer .top button::before {
 .helpPage .img.online05 {
     background: url('../images/help/online05.png') no-repeat;
     background-size: 100%;
+}
+
+.helpPage .img.download01 {
+    background: url('../images/help/download01.jpg');
+}
+.helpPage .img.download02 {
+    background: url('../images/help/download02.jpg');
+}
+.helpPage .img.download03 {
+    background: url('../images/help/download03.jpg');
+}
+.helpPage .img.download04 {
+    background: url('../images/help/download04.jpg');
+}
+.helpPage .img.download05 {
+    background: url('../images/help/download05.jpg');
+}
+.helpPage .img.download06 {
+    background: url('../images/help/download06.jpg');
 }
 
 //register

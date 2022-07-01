@@ -475,63 +475,36 @@ $(function(){
 })
 //helpPage .nav 連動切換
 $(function(){
-    $('.forNew_1').click(function(){
-        $('.newHelp_1').addClass('display');
-        $('.newHelp_1').siblings().removeClass('display');
-    })
-    $('.forNew_2').click(function(){
-        $('.newHelp_2').addClass('display');
-        $('.newHelp_2').siblings().removeClass('display');
-    })
-    $('.forNew_3').click(function(){
-        $('.newHelp_3').addClass('display');
-        $('.newHelp_3').siblings().removeClass('display');
-    })
-    $('.forNew_4').click(function(){
-        $('.newHelp_4').addClass('display');
-        $('.newHelp_4').siblings().removeClass('display');
-    })
-    $('.forNew_5').click(function(){
-        $('.newHelp_5').addClass('display');
-        $('.newHelp_5').siblings().removeClass('display');
+    $(".helpPage .box .forNew").click(function(){
+        var n = $(this).index();
+
+        $(".helpWrap .newHelp:eq("+ n +")")
+        .addClass("display")
+        .siblings().removeClass("display")
     })
 
-    $('.forQues_1').click(function(){
-        $('.question_1').addClass('display');
-        $('.question_1').siblings().removeClass('display');
-    })
-    $('.forQues_2').click(function(){
-        $('.question_2').addClass('display');
-        $('.question_2').siblings().removeClass('display');
-    })
-    $('.forQues_3').click(function(){
-        $('.question_3').addClass('display');
-        $('.question_3').siblings().removeClass('display');
+    $(".helpPage .box .forQues").click(function(){
+        var n = $(this).index();
+
+        $(".helpWrap .question:eq("+ n +")")
+        .addClass("display")
+        .siblings().removeClass("display")
     })
 
-    $('.forUs_1').click(function(){
-        $('.aboutUs_1').addClass('display');
-        $('.aboutUs_1').siblings().removeClass('display');
+    $(".helpPage .box .forUs").click(function(){
+        var n = $(this).index();
+
+        $(".helpWrap .aboutUs:eq("+ n +")")
+        .addClass("display")
+        .siblings().removeClass("display")
     })
-    $('.forUs_2').click(function(){
-        $('.aboutUs_2').addClass('display');
-        $('.aboutUs_2').siblings().removeClass('display');
-    })
-    $('.forUs_3').click(function(){
-        $('.aboutUs_3').addClass('display');
-        $('.aboutUs_3').siblings().removeClass('display');
-    })
-    $('.forUs_4').click(function(){
-        $('.aboutUs_4').addClass('display');
-        $('.aboutUs_4').siblings().removeClass('display');
-    })
-    $('.forUs_5').click(function(){
-        $('.aboutUs_5').addClass('display');
-        $('.aboutUs_5').siblings().removeClass('display');
-    })
-    $('.forUs_6').click(function(){
-        $('.aboutUs_6').addClass('display');
-        $('.aboutUs_6').siblings().removeClass('display');
+
+    $(".helpPage .box .forApp").click(function(){
+        var n = $(this).index();
+
+        $(".helpWrap .app:eq("+ n +")")
+        .addClass("display")
+        .siblings().removeClass("display")
     })
 })
 
@@ -566,15 +539,10 @@ $(function(){
         $(this)
         .addClass("active")
         .siblings().removeClass("active");
-    })
 
-    $(".depositWrap .list .shopBtn").click(function(){
-        $(".depositWrap .bottom .shop")
-        .addClass("display")
-        .siblings().removeClass("display");
-    })
-    $(".depositWrap .list .atmBtn").click(function(){
-        $(".depositWrap .bottom .atm")
+        var n = $(this).index();
+
+        $(".depositWrap .depContent:eq("+ n +")")
         .addClass("display")
         .siblings().removeClass("display");
     })
