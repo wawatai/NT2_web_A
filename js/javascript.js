@@ -594,3 +594,14 @@ $(function(){
         .attr("src","../images/platform/board/boardImg_"+ (n + 1) +".png");
     })
 })
+
+//維護時間hover
+$(function(){
+    var n = $(".topGameList li").has(".fixBox")
+
+    if(n)
+    {
+        $(n)
+        .css("pointer-events","none");
+    }
+})

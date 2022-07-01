@@ -350,6 +350,7 @@ input:disabled {
     color: #000000 !important;
     box-shadow: none !important;
     pointer-events: none !important;
+    padding: 0 !important;
 }
 input:read-only {
     background: none !important;
