@@ -3698,30 +3698,46 @@ html body .innerPage .center .vipWrap .vipHeader .rightBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-html body .innerPage .center .vipWrap .vipHeader .rightBox .lv {
+html body .innerPage .center .vipWrap .vipHeader .rightBox div .lv {
   margin: 10px 0;
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 2px;
   color: #000000;
 }
-html body .innerPage .center .vipWrap .vipHeader .rightBox .money span {
+html body .innerPage .center .vipWrap .vipHeader .rightBox div .money span {
   font-size: 14px;
   letter-spacing: 1px;
   color: #4d4d4d;
   font-weight: bold;
   margin-right: 10px;
+}
+html body .innerPage .center .vipWrap .vipHeader .rightBox .btn {
+  width: auto;
+  height: 36px;
+  background: #ce1515;
+  border-radius: 25px;
+  color: #ffffff;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  padding: 0 10px;
+  margin-right: 50px;
+  cursor: pointer;
 }
 html body .innerPage .center .vipWrap .lvGraph {
   width: 100%;

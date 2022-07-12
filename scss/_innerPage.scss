@@ -562,27 +562,44 @@
                 .rightBox {
                     width: 100%;
                     display: flex;
-                    align-items: flex-start;
-                    flex-direction: column;
-                    justify-content: center;
+                    align-items: center;
+                    justify-content: space-between;
 
-                    .lv {
-                        margin: 10px 0;
-                        font-size: 20px;
-                        font-weight: bold;
-                        letter-spacing: 2px;
-                        color: $fontColor_2;
+                    div {
+
+                        .lv {
+                            margin: 10px 0;
+                            font-size: 20px;
+                            font-weight: bold;
+                            letter-spacing: 2px;
+                            color: $fontColor_2;
+                        }
+    
+                        .money {
+    
+                            span {
+                                font-size: 14px;
+                                letter-spacing: 1px;
+                                color: $fontColor_10;
+                                font-weight: bold;
+                                margin-right: 10px;
+                            }
+                        }
                     }
 
-                    .money {
-
-                        span {
-                            font-size: 14px;
-                            letter-spacing: 1px;
-                            color: $fontColor_10;
-                            font-weight: bold;
-                            margin-right: 10px;
-                        }
+                    .btn {
+                        width: auto;
+                        height: 36px;
+                        background: $backgroundColor_15;
+                        border-radius: 25px;
+                        color: $fontColor_1;
+                        font-weight: bold;
+                        display: flex;
+                        align-items: center;
+                        justify-content: baseline;
+                        padding: 0 10px;
+                        margin-right: 50px;
+                        cursor: pointer;
                     }
                 }
             }
