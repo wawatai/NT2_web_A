@@ -609,6 +609,10 @@ footer .top button::before {
   background: url("../images/help/download06.jpg");
 }
 
+.helpPage .img.license {
+  background: url("../images/help/license.jpg") no-repeat;
+}
+
 .registerWrap {
   background: url("../images/register_background.png") no-repeat;
   background-size: cover;
@@ -1375,6 +1379,14 @@ html body header .topGameList .listWrap .center .container ul li .fixBox .timeBo
   display: block;
   width: auto;
   height: auto;
+}
+html body header .topGameList .listWrap .center .container ul li .fixBox .timeBox div:nth-of-type(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 html body header .topGameList .listWrap .center .container ul li .fixBox .timeBox div span {
   display: block;
@@ -2597,11 +2609,6 @@ html body .gameWrap .content .center .btnBox .innBox ul li.disable:hover img, ht
   -o-object-position: top;
      object-position: top;
 }
-html body .gameWrap .content .center .btnBox .innBox ul li.disable .fixBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 html body .gameWrap .content .center .btnBox .innBox ul li:hover img, html body .gameWrap .content .center .btnBox .innBox ul li.active img, html body .gameWrap .content .center .btnBox .innBox ul li.active img {
   -o-object-position: bottom;
      object-position: bottom;
@@ -2661,6 +2668,14 @@ html body .gameWrap .content .center .btnBox .innBox ul li .fixBox .timeBox div 
   display: block;
   width: auto;
   height: auto;
+}
+html body .gameWrap .content .center .btnBox .innBox ul li .fixBox .timeBox div:nth-of-type(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 html body .gameWrap .content .center .btnBox .innBox ul li .fixBox .timeBox div span {
   display: block;
@@ -7963,6 +7978,10 @@ html body .helpPage .center .helpWrap div .img.download05 {
 html body .helpPage .center .helpWrap div .img.download06 {
   width: 645px;
   height: 393px;
+}
+html body .helpPage .center .helpWrap div .img.license {
+  width: 800px;
+  height: 1071px;
 }
 html body .helpPage .center .helpWrap div button {
   width: 190px;
