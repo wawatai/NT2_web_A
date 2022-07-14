@@ -109,19 +109,57 @@
                             }
 
                             .fixBox {
-                                display: none;
-                                position: absolute;
-                                left: 0;
-                                top: 0;
                                 width: 100%;
-                                height: 110%;
-                                border-radius: 5px;
-                                background: $backgroundColor_14;
+                                height: 100%;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                display: none;
+                                flex-direction: column;
                                 align-items: center;
                                 justify-content: center;
-                                color: $fontColor_1;
-                                font-size: 24px;
-                                font-weight: bold;
+                                background: $backgroundColor_14;
+                                border-radius: 16px;
+
+                                &.display {
+                                    display: flex;
+                                }
+
+                                .title {
+                                    color: $fontColor_1;
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    margin-bottom: 15px;
+                                }
+                
+                                .timeBox {
+                                    width: 100%;
+                                    height: auto;
+                                    box-sizing: border-box;
+                                    padding: 0 16px;
+                                    display: flex;
+                                    justify-content: space-between;
+                
+                                    div {
+                                        display: block;
+                                        width: auto;
+                                        height: auto;
+                
+                                        span {
+                                            display: block;
+                                            color: $fontColor_1;
+                                            font-size: 14px;
+                                            font-weight: bold;
+                                            margin-bottom: 10px;
+                                        }
+                
+                                        p {
+                                            color: $fontColor_1;
+                                            font-size: 18px;
+                                            font-weight: bold;
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
