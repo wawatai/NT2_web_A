@@ -420,18 +420,16 @@ $(function(){
 
 //eventWrap 切換
 $(function(){
-    $('.eventWrap .tabs li:nth-of-type(1)').click(function(){
-        $(this).addClass('active');
-        $(this).siblings().removeClass('active');
-        $('.eventMiddle .eventBox').addClass('display');
-        $('.eventMiddle .eventRecord').removeClass('display');
-    })
+    $('.eventWrap .tabs li').click(function(){
+        $(this)
+        .addClass('active')
+        .siblings().removeClass("active");
 
-    $('.eventWrap .tabs li:nth-of-type(2)').click(function(){
-        $(this).addClass('active');
-        $(this).siblings().removeClass('active');
-        $('.eventMiddle .eventBox').removeClass('display');
-        $('.eventMiddle .eventRecord').addClass('display');
+        var n = $(this).index();
+        
+        $(".eventMiddle .event:eq("+ n +")")
+        .addClass("display")
+        .siblings().removeClass("display")
     })
 })
 
