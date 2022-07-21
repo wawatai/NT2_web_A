@@ -444,7 +444,7 @@
                             <i class="wallet_ic"></i>
                             我的錢包
                         </li>
-                        <li class="active" onclick="window.location.href='./bankCard.html'">
+                        <li onclick="window.location.href='./bankCard.html'">
                             <i class="card_ic"></i>
                             綁定銀行卡
                         </li>
@@ -452,7 +452,7 @@
                             <i class="dealRecord_ic"></i>
                             交易紀錄
                         </li>
-                        <li onclick="window.location.href='./point.html'">
+                        <li  class="active" onclick="window.location.href='./point.html'">
                             <i class="dealRecord_ic"></i>
                             查詢紅利
                         </li>
@@ -475,143 +475,84 @@
                     </ul>
                 </aside>
                 <section>
-                    <div class="cardWrap">
-                        <div class="cardMiddle">
-                            <div class="top">
-                                <div class="header">
-                                    <span>綁定銀行卡</span>
-                                </div>
-                                <div class="content">
-                                    <div class="title">
-                                        <span>卡片管理</span>
-                                        <span>卡片數量 3 <span>/ 5</span></span>
+                    <div class="pointWrap">
+                        <form>
+                            <div class="title">查詢紅利</div>
+                            <div class="timeGroup">
+                                <div class="timeBox">
+                                    <p>日期</p>
+                                    <input type="date">
+                                    <div class="btnBox">
+                                        <button>昨天</button>
+                                        <button class="active">今天</button>
+                                        <button>本週</button>
+                                        <button>本月</button>
                                     </div>
-                                    <div class="cardBox">
-                                        <div class="slider">
-                                            <div class="card empty">
-                                                <div class="addCard_ic"></div>
-                                                <div class="text">請先綁定一張銀行卡，用於收款</div>
-                                            </div>
-                                            <div class="card register">
-                                                <div class="name">上海銀行</div>
-                                                <div class="branch">上海</div>
-                                                <div class="account">
-                                                    <span>0234568790</span>
-                                                </div>
-                                                <p class="review">審核中</p>
-                                            </div>
-                                            <div class="card register">
-                                                <div class="name">上海銀行</div>
-                                                <div class="branch">上海</div>
-                                                <div class="account">
-                                                    <span>0234568790</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <p class="remind">只能查詢60天內的資料</p>
                                 </div>
+                                <button class="checkBtn">查詢</button>
                             </div>
-                            <div class="bottomWrap">
-                                <div class="bottom">
-                                    <div>
-                                        <div class="title">添加銀行卡</div>
-                                        <div class="formBox">
-                                            <form>
-                                                <div class="content">
-                                                    <div class="row">
-                                                        <div class="smallTitle">
-                                                            <span>銀行名稱</span>
-                                                        </div>
-                                                        <div class="inputBox">
-                                                            <input type="text">
-                                                            <p class="err">銀行名稱為必填</p>
-                                                            <small>輸入一個相關字，產生銀行選單</small>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="smallTitle">
-                                                            <span>分行名稱</span>
-                                                        </div>
-                                                        <div class="inputBox">
-                                                            <input type="text">
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="smallTitle">
-                                                            <span>開戶姓名</span>
-                                                        </div>
-                                                        <div class="inputBox">
-                                                            <input type="text" value="美術一" readonly>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="smallTitle">
-                                                            <span>銀行帳號</span>
-                                                        </div>
-                                                        <div class="inputBox">
-                                                            <input type="text">
-                                                            <p class="err">帳號為必填</p>
-                                                            <small>請認真校對銀行帳號，帳號錯誤資金將無法到賬!</small>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="smallTitle">
-                                                            <span>確認帳號</span>
-                                                        </div>
-                                                        <div class="inputBox">
-                                                            <input type="text">
-                                                            <small>請認真校對銀行帳號，帳號錯誤資金將無法到賬!</small>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="smallTitle"></div>
-                                                        <div class="inputBox">
-                                                            <button>確認</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
+                        </form>
+                        <hr>
+                        <div class="fakeTable">
+                            <ul>
+                                <li class="title">
+                                    <div class="wordWrap">
+                                        <p>層級</p>
+                                        <p>人數</p>
+                                        <p>有效投注</p>
+                                        <p>預估紅利</p>
                                     </div>
-                                </div>
-                            </div>
+                                </li>
+                                <li class="active">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p class="open pointWindow 1st ">一代會員</p>
+                                            </td>
+                                            <td>
+                                                <p  class="open pointWindow memberData">1</p>
+                                            </td>
+                                            <td>
+                                                <p>256.0000</p>
+                                            </td>
+                                            <td>
+                                                <p>1.0060</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="open pointWindow 2st">二代會員</p>
+                                            </td>
+                                            <td>
+                                                <p>0</p>
+                                            </td>
+                                            <td>
+                                                <p>0</p>
+                                            </td>
+                                            <td>
+                                                <p>0</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="open pointWindow 3st">三代會員</p>
+                                            </td>
+                                            <td>
+                                                <p>0</p>
+                                            </td>
+                                            <td>
+                                                <p>0</p>
+                                            </td>
+                                            <td>
+                                                <p>0</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </li>
+                            </ul>
                         </div>
-                        <aside class="rightSide">
-                            <div class="smallBoard">
-                                <div class="title">
-                                    投注紀錄
-                                    <p class="more">
-                                        更多
-                                        <i class="arrow"></i>
-                                    </p>
-                                </div>
-                                <ul class="list">
-                                    <li class="smallList">
-                                        <p class="smallTitle">BNG娛樂</p>
-                                        <ul>
-                                            <li>
-                                                <p>投注</p>
-                                                <p>$ 24</p>
-                                            </li>
-                                            <li>
-                                                <p>輸贏</p>
-                                                <p>$ -17</p>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="smallBoard">
-                                <div class="title">
-                                    活動錢包
-                                    <p class="more">
-                                        更多
-                                        <i class="arrow"></i>
-                                    </p>
-                                </div>
-                                <ul class="list"></ul>
-                            </div>
-                        </aside>
+                        <p class="noData">目前無資料</p>
                     </div>
                 </section>
             </div>
@@ -674,7 +615,7 @@
             </div>
         </div>
     </footer>
-    <div class="filter display">
+    <div class="filter">
         <div class="jumpWindow news">
             <div class="title">
                 <p>最新公告</p>
@@ -842,18 +783,228 @@
                 <button>進入遊戲</button>
             </div>
         </div>
-        <div class="jumpWindow plsGo display">
+        <!--紅利查詢-->
+        <!-- 一代會員 -->
+        <div class="jumpWindow pointWindow 1st">
             <div class="title">
-                <p>提示</p>
+                <p>一代會員 - 詳情</p>
                 <i class="close_ic"></i>
             </div>
             <div class="content">
-                <div>請至個人資料頁面綁定資料</div>
-            </div>
-            <div class="btnBox">
-                <button>同意</button>
+                <table>
+                    <tr>
+                        <th>
+                            <p>會員帳號</p>
+                        </th>
+                        <th>
+                            <p>會員名稱</p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>xxoo08</p>
+                        </td>
+                        <td>
+                            <p>蚵仔煎</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>lo0026</p>
+                        </td>
+                        <td>
+                            <p>Shado</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>tete17</p>
+                        </td>
+                        <td>
+                            <p>停電</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>sn778888</p>
+                        </td>
+                        <td>
+                            <p>-</p>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
+        <!-- 一代會員/明細 -->
+        <div class="jumpWindow pointWindow memberData">
+            <div class="title">
+                <p>一代會員 - 明細</p>
+                <i class="close_ic"></i>
+            </div>
+            <div class="content">
+                <table>
+                    <tr>
+                        <th>
+                            <p>會員帳號</p>
+                        </th>
+                        <th>
+                            <p>有效投注</p>
+                        </th>
+                        <th>
+                            <p>預估紅利</p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>xxoo08</p>
+                        </td>
+                        <td>
+                            <p>13440.0000</p>
+                        </td>
+                        <td>
+                            <p>26.8800</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>lo0026</p>
+                        </td>
+                        <td>
+                            <p>200.0000</p>
+                        </td>
+                        <td>
+                            <p>0.4000</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>tete17</p>
+                        </td>
+                        <td>
+                            <p>15000.0000</p>
+                        </td>
+                        <td>
+                            <p>30.0000</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>sn778888</p>
+                        </td>
+                        <td>
+                            <p>3000.0000</p>
+                        </td>
+                        <td>
+                            <p>6.0000</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- 二代會員 -->
+        <div class="jumpWindow pointWindow 2st">
+            <div class="title">
+                <p>二代會員 - 詳情</p>
+                <i class="close_ic"></i>
+            </div>
+            <div class="content">
+                <table>
+                    <tr>
+                        <th>
+                            <p>會員帳號</p>
+                        </th>
+                        <th>
+                            <p>會員名稱</p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>xxoo08</p>
+                        </td>
+                        <td>
+                            <p>蚵仔煎</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>lo0026</p>
+                        </td>
+                        <td>
+                            <p>Shado</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>tete17</p>
+                        </td>
+                        <td>
+                            <p>停電</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>sn778888</p>
+                        </td>
+                        <td>
+                            <p>-</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- 三代會員 -->
+        <div class="jumpWindow pointWindow 3st">
+            <div class="title">
+                <p>三代會員 - 詳情</p>
+                <i class="close_ic"></i>
+            </div>
+            <div class="content noData">
+                <p class="noData">目前無資料</p>
+                <!-- <table>
+                    <tr>
+                        <th>
+                            <p>會員帳號</p>
+                        </th>
+                        <th>
+                            <p>會員名稱</p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>xxoo08</p>
+                        </td>
+                        <td>
+                            <p>蚵仔煎</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>lo0026</p>
+                        </td>
+                        <td>
+                            <p>Shado</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>tete17</p>
+                        </td>
+                        <td>
+                            <p>停電</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>sn778888</p>
+                        </td>
+                        <td>
+                            <p>-</p>
+                        </td>
+                    </tr>
+                </table> -->
+            </div>
+        </div>
+    </div>
     </div>
 </body>
 </html>
