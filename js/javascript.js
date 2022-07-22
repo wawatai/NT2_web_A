@@ -295,20 +295,12 @@ $(function(){
         $('.forDeposit').addClass('display');
         $('.forDeposit').siblings().removeClass('display');
     })
-    //查詢紅利彈窗
-    $('.innerPage .pointWrap table .open.1st').click(function(){
+    //推薦好友彈窗
+    $('.innerPage .friendWrap table .open.1st').click(function(){
         $('.filter,.filter .pointWindow.1st').addClass('display');
         $('.filter,.filter .pointWindow.1st').siblings().removeClass('display');
     })
-    $('.innerPage .pointWrap table .open.2st').click(function(){
-        $('.filter,.filter .pointWindow.2st').addClass('display');
-        $('.filter,.filter .pointWindow.2st').siblings().removeClass('display');
-    })
-    $('.innerPage .pointWrap table .open.3st').click(function(){
-        $('.filter,.filter .pointWindow.3st').addClass('display');
-        $('.filter,.filter .pointWindow.3st').siblings().removeClass('display');
-    })
-    $('.innerPage .pointWrap table .open.memberData').click(function(){
+    $('.innerPage .friendWrap table .open.memberData').click(function(){
         $('.filter,.filter .pointWindow.memberData').addClass('display');
         $('.filter,.filter .pointWindow.memberData').siblings().removeClass('display');
     })
