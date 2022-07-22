@@ -8189,12 +8189,18 @@ html body .innerPage .center .friendWrap .eventInfo .mainTitle {
   font-size: 20px;
   color: #e11515;
   font-weight: bold;
+  margin-bottom: 20px;
+}
+html body .innerPage .center .friendWrap .eventInfo .subTitle {
+  font-size: 16px;
+  color: #e11515;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 html body .innerPage .center .friendWrap .eventInfo .textBox {
   width: 100%;
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 html body .innerPage .center .friendWrap .eventInfo .textBox .content {
   font-size: 14px;
