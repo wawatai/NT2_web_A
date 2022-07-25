@@ -8184,6 +8184,7 @@ html body .innerPage .center .friendWrap .eventInfo {
   width: 95%;
   height: auto;
   padding: 25px;
+  margin-top: 35px;
 }
 html body .innerPage .center .friendWrap .eventInfo .mainTitle {
   font-size: 20px;
@@ -8200,7 +8201,10 @@ html body .innerPage .center .friendWrap .eventInfo .subTitle {
 html body .innerPage .center .friendWrap .eventInfo .textBox {
   width: 100%;
   height: auto;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
+}
+html body .innerPage .center .friendWrap .eventInfo .textBox:last-child {
+  margin-bottom: 0;
 }
 html body .innerPage .center .friendWrap .eventInfo .textBox .content {
   font-size: 14px;

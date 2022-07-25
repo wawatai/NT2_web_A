@@ -4285,6 +4285,7 @@
                 width: 95%;
                 height: auto;
                 padding: 25px;
+                margin-top: 35px;
 
                 .mainTitle {
                     font-size: 20px;
@@ -4301,7 +4302,11 @@
                 .textBox {
                     width: 100%;
                     height: auto;
-                    margin-bottom: 20px;
+                    margin-bottom: 35px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
 
                     .content {
                         font-size: 14px;
