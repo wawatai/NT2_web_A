@@ -7952,7 +7952,7 @@ html body .innerPage .center .friendWrap form .timeGroup .checkBtn:hover, html b
 html body .innerPage .center .friendWrap .fakeTable {
   width: 100%;
   height: auto;
-  margin: 15px 0 30px;
+  margin: 15px 0 20px;
 }
 html body .innerPage .center .friendWrap .fakeTable ul {
   width: 100%;
@@ -8129,8 +8129,8 @@ html body .innerPage .center .friendWrap .recInfo ul label {
   display: inline-block;
   width: 80px;
   height: auto;
-  text-align: right;
-  margin: 0 26px 0 40px;
+  text-align: left;
+  margin: 0 26px 0 25px;
   font-size: 14px;
   letter-spacing: 1px;
   color: #000000;
@@ -8205,6 +8205,11 @@ html body .innerPage .center .friendWrap .eventInfo .textBox {
 html body .innerPage .center .friendWrap .eventInfo .textBox .content {
   font-size: 14px;
   line-height: 30px;
+}
+html body .innerPage .center .friendWrap .eventInfo .textBox .content span {
+  font-size: 14px;
+  color: #e11515;
+  font-weight: bold;
 }
 html body .innerPage .center .friendWrap .eventInfo .textBox .content ul {
   margin-left: 15px;

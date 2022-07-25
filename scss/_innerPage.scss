@@ -4056,7 +4056,7 @@
             .fakeTable {
                 width: 100%;
                 height: auto;
-                margin: 15px 0 30px;
+                margin: 15px 0 20px;
 
                 ul {
                     width: 100%;
@@ -4239,8 +4239,8 @@
                         display: inline-block;
                         width: 80px;
                         height: auto;
-                        text-align: right;
-                        margin: 0 26px 0 40px;
+                        text-align: left;
+                        margin: 0 26px 0 25px;
                         font-size: 14px;
                         letter-spacing: 1px;
                         color: $fontColor_2;
@@ -4306,6 +4306,12 @@
                     .content {
                         font-size: 14px;
                         line-height: 30px;
+
+                        span {
+                            font-size: 14px;
+                            color: $fontColor_4;
+                            font-weight: bold;
+                        }
 
                         ul {
                             margin-left: 15px;
